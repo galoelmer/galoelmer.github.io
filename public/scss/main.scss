@@ -1,0 +1,18 @@
+@import 'config';
+@import 'navigation';
+
+body {
+  height: 100vh;
+  font-family: nunito, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
