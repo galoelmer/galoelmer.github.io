@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.25em;
+
+    &__job-title {
+      color: gray;
+      font-size: 0.6em;
+    }
+  }
+
+  .about-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+
+    & img {
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    &__location {
+      color: gray;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+  }
+}
