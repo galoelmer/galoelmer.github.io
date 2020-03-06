@@ -3,6 +3,7 @@
   width: 100%;
   justify-content: space-between;
   margin: 1em;
+  font-size: 1.05em;
 
   .nav-menu {
     display: flex;
@@ -12,23 +13,51 @@
     margin-right: 10em;
 
     &__link {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.8em;
+      font-weight: bold;
+      position: relative;
+
       & span img {
         margin: 0 3px -3px 0;
         width: 22px;
       }
 
-       &:hover {
-          color: #568DC9;
-          filter: grayscale(20%);
-        }
+      &::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: -5px;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: tomato;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
+
+      &:hover {
+        color: #568dc9;
+      }
     }
   }
 
   .logo {
     margin-left: 8em;
+    cursor: pointer;
     &__img {
       display: block;
       width: 125px;
+
+      &:hover {
+        filter: hue-rotate(200deg);
+      }
     }
   }
 }

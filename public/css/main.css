@@ -14,6 +14,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 1em;
+  font-size: 1.05em;
 }
 
 .nav .nav-menu {
@@ -30,24 +31,55 @@
   margin-right: 10em;
 }
 
+.nav .nav-menu__link {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+}
+
 .nav .nav-menu__link span img {
   margin: 0 3px -3px 0;
   width: 22px;
 }
 
+.nav .nav-menu__link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -5px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: tomato;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav .nav-menu__link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .nav .nav-menu__link:hover {
-  color: #568DC9;
-  -webkit-filter: grayscale(20%);
-          filter: grayscale(20%);
+  color: #568dc9;
 }
 
 .nav .logo {
   margin-left: 8em;
+  cursor: pointer;
 }
 
 .nav .logo__img {
   display: block;
   width: 125px;
+}
+
+.nav .logo__img:hover {
+  -webkit-filter: hue-rotate(200deg);
+          filter: hue-rotate(200deg);
 }
 
 .about {
@@ -70,7 +102,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 2.25em;
-  font-weight: 900;
 }
 
 .about .about-bio__job-title {
