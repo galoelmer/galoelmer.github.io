@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Elmer C. Galo Web Developer portfolio"
-    />
+    <meta name="description" content="Elmer C. Galo Web Developer portfolio" />
     <meta
       name="keywords"
       content="Web Developer,Portfolio,HTML,CSS,JavaScript,React"
@@ -14,9 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Elmer - Web Developer</title>
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/vke5ywu.css" />
+    <script src="https://kit.fontawesome.com/4e9b7588d9.js"></script>
   </head>
   <body>
     <header>
@@ -26,22 +24,38 @@
     </header>
     <nav class="nav">
       <div class="logo">
-        <img
-          class="logo__img"
-          src="./public/img/logo.png"
-          alt="My Logo"
-          
-        />
+        <img class="logo__img" src="./public/img/logo.png" alt="My Logo" />
       </div>
       <ul class="nav-menu">
         <li class="nav-menu__item">
-          <a href="#!" class="nav-menu__link"><span class="nav-menu__icon"><img src="./public/img/portfolio-icon.png" alt="Portfolio icon">Portfolio</span></a>
+          <a href="#portfolio" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/portfolio-icon.png"
+                alt="Portfolio icon"
+              />Portfolio</span
+            ></a
+          >
         </li>
         <li class="nav-menu__item">
-          <a href="#!" class="nav-menu__link"><span class="nav-menu__icon"><img src="./public/img/contact-icon.png" alt="Contact icon">Contact</span></a>
+          <a href="#!" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/contact-icon.png"
+                alt="Contact icon"
+              />Contact</span
+            ></a
+          >
         </li>
         <li class="nav-menu__item">
-          <a href="#!" class="nav-menu__link"><span class="nav-menu__icon"><img src="./public/img/resume-icon.png" alt="Resume icon">Resume</span></a>
+          <a href="#!" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/resume-icon.png"
+                alt="Resume icon"
+              />Resume</span
+            ></a
+          >
         </li>
       </ul>
     </nav>
@@ -56,14 +70,69 @@
           <h5 class="about-bio__job-title">Web Developer</h5>
         </div>
         <div class="about-picture">
-          <img class="profile-picture" src="https://picsum.photos/300" alt="Elmer C. Galo Picture" />
-          <div class="about-picture__location"><img class="location-icon" src="./public/img/location-icon.png" alt="Location icon">Greensboro, NC</div>
+          <img
+            class="profile-picture"
+            src="https://picsum.photos/300"
+            alt="Elmer C. Galo Picture"
+          />
+          <div class="about-picture__location">
+            <img
+              class="location-icon"
+              src="./public/img/location-icon.png"
+              alt="Location icon"
+            />Greensboro, NC
+          </div>
         </div>
-        <img class="about__illustration" src="./public/img/Illustration-1.png" alt="Background illustration">
+        <img
+          class="about__illustration"
+          src="./public/img/Illustration-1.png"
+          alt="Background illustration"
+        />
+      </section>
+      <section id="portfolio" class="portfolio" >
+        <h2 class="portfolio__heading">My Projects</h2>
+        <div class="portfolio__cards">
+          <div class="portfolio__card">
+            <img class="portfolio__card-image" src="https://picsum.photos/300">
+            <h2>Title</h2>
+            <div class="portfolio__card-links">
+              <a href="#!"><i class="fab fa-github"></i></a>
+              <a href="#!"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <h2><a href="#">Title</a></h2>
+            <p>Some article description stuff.</p>
+          </div>
+          <div class="portfolio__card">
+            <h2><a href="#">Title</a></h2>
+            <p>Some article description stuff.</p>
+          </div>
+          <div class="portfolio__card">
+            <h2><a href="#">Title</a></h2>
+            <p>Some article description stuff.</p>
+          </div>
+          <div class="portfolio__card">
+            <h2><a href="#">Title</a></h2>
+            <p>Some article description stuff.</p>
+          </div>
+        </div>
       </section>
       <section class="social-nav">
-        <a class="social-nav__icon" href="https://www.linkedin.com/in/elmer-carrasco-4160a3191/" target="_blank" rel="noopener noreferrer"><img src="./public/img/linkedin-icon.png"></a>
-        <a class="social-nav__icon" href="https://github.com/galoelmer" target="_blank" rel="noopener noreferrer"><img src="./public/img/github-icon.png"></a>
+        <a
+          class="social-nav__icon"
+          href="https://www.linkedin.com/in/elmer-carrasco-4160a3191/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./public/img/linkedin-icon.png"
+        /></a>
+        <a
+          class="social-nav__icon"
+          href="https://github.com/galoelmer"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./public/img/github-icon.png"
+        /></a>
       </section>
     </main>
 

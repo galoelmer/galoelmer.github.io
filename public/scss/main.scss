@@ -1,7 +1,12 @@
 @import 'config';
 @import 'navigation';
 @import 'about';
+@import 'portfolio';
 @import 'social-nav';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100vh;
