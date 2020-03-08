@@ -17,11 +17,6 @@
     <script src="https://kit.fontawesome.com/4e9b7588d9.js"></script>
   </head>
   <body>
-    <header>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div>
-    </header>
     <nav class="nav">
       <div class="logo">
         <img class="logo__img" src="./public/img/logo.png" alt="My Logo" />
@@ -61,6 +56,7 @@
     </nav>
 
     <main>
+      <!-- About Section -->
       <section class="about">
         <div class="about-bio">
           <h2 class="about-bio__introduction">
@@ -88,16 +84,23 @@
           src="./public/img/Illustration-1.png"
           alt="Background illustration"
         />
+        <!-- Portfolio Section -->
       </section>
-      <section id="portfolio" class="portfolio" >
+      <section id="portfolio" class="portfolio">
         <h2 class="portfolio__heading">My Projects</h2>
         <div class="portfolio__cards">
           <div class="portfolio__card">
-            <img class="portfolio__card-image" src="https://picsum.photos/300">
-            <h2>Title</h2>
+            <img
+              class="portfolio__card-image"
+              src="./public/img/trivia-game.png"
+            />
             <div class="portfolio__card-links">
-              <a href="#!"><i class="fab fa-github"></i></a>
-              <a href="#!"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/galoelmer/TriviaGame" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://galoelmer.github.io/TriviaGame/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
           <div class="portfolio__card">
@@ -118,19 +121,18 @@
           </div>
         </div>
       </section>
+      <!-- Social Nav Section -->
       <section class="social-nav">
         <a
           class="social-nav__icon"
           href="https://www.linkedin.com/in/elmer-carrasco-4160a3191/"
           target="_blank"
-          rel="noopener noreferrer"
           ><img src="./public/img/linkedin-icon.png"
         /></a>
         <a
           class="social-nav__icon"
           href="https://github.com/galoelmer"
           target="_blank"
-          rel="noopener noreferrer"
           ><img src="./public/img/github-icon.png"
         /></a>
       </section>
