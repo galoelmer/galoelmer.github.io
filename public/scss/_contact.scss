@@ -1,0 +1,28 @@
+.contact {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  
+  &__heading {
+    font-size: 3.5em;
+  }
+
+  &__info {
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 1.85em;
+  }
+
+  &__illustration {
+    display: block;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -999;
+  }
+}
