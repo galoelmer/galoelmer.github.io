@@ -216,6 +216,7 @@
   height: 100vh;
   margin-left: 150px;
   padding: 50px;
+  position: relative;
 }
 
 .portfolio__heading {
@@ -287,6 +288,18 @@
 
 .portfolio__card-links a:hover {
   color: #fff;
+}
+
+.portfolio__illustration {
+  width: 60%;
+  display: block;
+  position: absolute;
+  z-index: -9999;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+  top: 0;
+  left: -18em;
+  opacity: 0.2;
 }
 
 .portfolio__card:not(:first-child) {
