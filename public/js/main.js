@@ -1,7 +1,5 @@
-//Get the button:
-scrollTopButton = document.querySelector(".scroll-to-top-button");
-
-console.log(scrollTopButton)
+// Get the button:
+const scrollTopButton = document.querySelector('.scroll-to-top-button');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {

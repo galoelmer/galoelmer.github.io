@@ -354,6 +354,14 @@
   cursor: pointer;
 }
 
+.contact__email:hover, .contact__phone:hover {
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.contact__email:hover a, .contact__phone:hover a {
+  color: #fff;
+}
+
 .contact__illustration {
   display: block;
   width: 45%;
