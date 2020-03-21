@@ -234,7 +234,6 @@
 .portfolio__card {
   background: white;
   border-radius: 1rem;
-  padding: 1.5rem;
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: 0.2s;
@@ -259,11 +258,10 @@
 
 .portfolio__card-image {
   display: block;
-  width: 150%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -50px;
 }
 
 .portfolio__card-links {
@@ -284,10 +282,11 @@
 .portfolio__card-links a {
   z-index: 999;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.514);
+  color: #fff;
 }
 
 .portfolio__card-links a:hover {
-  color: #fff;
+  color: #279deb;
 }
 
 .portfolio__illustration {

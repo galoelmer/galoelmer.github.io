@@ -1,3 +1,6 @@
+/* =========================== */
+/* Scroll to Top Functionality */
+/* =========================== */
 // Get the button:
 const scrollTopButton = document.querySelector('.scroll-to-top-button');
 
