@@ -7,8 +7,14 @@
   justify-content: space-between;
   width: 50px;
   height: 130px;
+  transition: 0.5s;
 
   &__icon  img {
     width: 100%;
+  }
+
+  &__icon:hover {
+    transform: scale(1.1);
+    filter: contrast(200%);
   }
 }

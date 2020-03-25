@@ -242,6 +242,7 @@
   width: 300px;
   height: 300px;
   overflow: hidden;
+  border: 1px inset #fff;
 }
 
 .portfolio__card::after {
@@ -392,10 +393,19 @@
           justify-content: space-between;
   width: 50px;
   height: 130px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .social-nav__icon img {
   width: 100%;
+}
+
+.social-nav__icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
 }
 
 html {

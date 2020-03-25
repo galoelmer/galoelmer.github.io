@@ -23,6 +23,7 @@
     width: 300px;
     height: 300px;
     overflow: hidden;
+    border: 1px inset #fff;
 
     &::after {
       content: '';
