@@ -17,8 +17,7 @@
   &__card {
     background: white;
     border-radius: 1rem;
-    // padding: 1.5rem;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -10px 0px 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s;
     position: relative;
     width: 300px;
@@ -63,7 +62,8 @@
           color: #fff;
 
       &:hover {
-        color: rgb(39, 157, 235);
+        color: rgb(149, 228, 240);
+        transform: scale(1.1);
       }
     }
   }
@@ -86,6 +86,7 @@
   &__card:not(:last-child):hover,
   &__card:not(:last-child):focus-within {
     transform: translateY(-1rem);
+    transform: scale(1.05);
     ~ .portfolio__card {
       transform: translateX(2rem);
     }
