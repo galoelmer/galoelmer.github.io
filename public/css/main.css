@@ -47,7 +47,7 @@
 .nav .nav-menu__link::after {
   background: none repeat scroll 0 0 transparent;
   bottom: -5px;
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   left: 50%;
@@ -111,11 +111,53 @@
   /* Increase font size */
   -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
 }
 
 .nav .scroll-to-top-button:hover {
   background-color: #e42300;
   /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    margin: 0.8em;
+    font-size: 1em;
+  }
+  .nav .nav-menu {
+    width: 50%;
+    margin-right: 2em;
+  }
+  .nav .nav-menu__link span img {
+    width: 18px;
+  }
+  .nav .logo {
+    margin-left: 1em;
+  }
+  .nav .logo__img {
+    display: block;
+    width: 105px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .nav {
+    font-size: 0.6em;
+  }
+  .nav .nav-menu {
+    width: 65%;
+    margin-right: 0;
+  }
+  .nav .nav-menu__link span img {
+    width: 12px;
+  }
+  .nav .logo {
+    margin-left: 0;
+  }
+  .nav .logo__img {
+    display: block;
+    width: 70px;
+  }
 }
 
 .about {
@@ -415,6 +457,7 @@ html {
 body {
   height: 100vh;
   font-family: nunito, sans-serif;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   color: #3A4654;
