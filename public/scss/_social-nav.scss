@@ -8,9 +8,27 @@
   width: 50px;
   height: 130px;
   transition: 0.5s;
+  
+  @include responsive(mobile) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    // border: 2px solid red;
+    width: auto;
+    height: auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 8px 0;
+    background-color: #4e7397ec;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  }
 
   &__icon  img {
     width: 100%;
+
+    @include responsive(mobile) {
+      width: 70%;
+    }
   }
 
   &__icon:hover {
