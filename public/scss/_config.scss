@@ -1,5 +1,19 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Responsive configuration
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == tablet) {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == mobile) {
+    @media (max-width: 426px) {
+      @content;
+    }
+  }
 }

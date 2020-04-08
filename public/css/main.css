@@ -17,6 +17,19 @@
   font-size: 1.05em;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    margin: 0.8em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav {
+    font-size: 0.6em;
+  }
+}
+
 .nav .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +44,20 @@
   margin-right: 10em;
 }
 
+@media (max-width: 768px) {
+  .nav .nav-menu {
+    width: 50%;
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav .nav-menu {
+    width: 65%;
+    margin-right: 0;
+  }
+}
+
 .nav .nav-menu__link {
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -42,6 +69,18 @@
 .nav .nav-menu__link span img {
   margin: 0 3px -3px 0;
   width: 22px;
+}
+
+@media (max-width: 768px) {
+  .nav .nav-menu__link span img {
+    width: 18px;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav .nav-menu__link span img {
+    width: 12px;
+  }
 }
 
 .nav .nav-menu__link::after {
@@ -72,9 +111,35 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .nav .logo {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav .logo {
+    margin-left: 0;
+  }
+}
+
 .nav .logo__img {
   display: block;
   width: 125px;
+}
+
+@media (max-width: 768px) {
+  .nav .logo__img {
+    display: block;
+    width: 105px;
+  }
+}
+
+@media (max-width: 426px) {
+  .nav .logo__img {
+    display: block;
+    width: 70px;
+  }
 }
 
 .nav .logo__img:hover {
@@ -119,47 +184,6 @@
   /* Add a dark-grey background on hover */
 }
 
-@media only screen and (max-width: 768px) {
-  .nav {
-    margin: 0.8em;
-    font-size: 1em;
-  }
-  .nav .nav-menu {
-    width: 50%;
-    margin-right: 2em;
-  }
-  .nav .nav-menu__link span img {
-    width: 18px;
-  }
-  .nav .logo {
-    margin-left: 1em;
-  }
-  .nav .logo__img {
-    display: block;
-    width: 105px;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  .nav {
-    font-size: 0.6em;
-  }
-  .nav .nav-menu {
-    width: 65%;
-    margin-right: 0;
-  }
-  .nav .nav-menu__link span img {
-    width: 12px;
-  }
-  .nav .logo {
-    margin-left: 0;
-  }
-  .nav .logo__img {
-    display: block;
-    width: 70px;
-  }
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +192,8 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .about .about-bio {
@@ -461,6 +487,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: #3A4654;
+  overflow-x: hidden;
 }
 
 a {

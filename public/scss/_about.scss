@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 
   .about-bio {
     display: flex;
