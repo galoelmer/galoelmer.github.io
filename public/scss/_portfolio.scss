@@ -3,7 +3,7 @@
   margin-left: 150px;
   padding: 50px;
   position: relative;
-  
+
   @include responsive(mobile) {
     margin-left: 0;
     padding: 10px;
@@ -23,7 +23,7 @@
     height: 100%;
     margin-top: 40px;
 
-    @include responsive(mobile){
+    @include responsive(mobile) {
       display: -webkit-box;
       overflow: scroll;
     }
@@ -32,7 +32,8 @@
   &__card {
     background: white;
     border-radius: 1rem;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), -10px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
+      -10px 0px 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s;
     position: relative;
     width: 300px;
@@ -79,7 +80,7 @@
     & a {
       z-index: 999;
       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.514);
-          color: #fff;
+      color: #fff;
 
       &:hover {
         color: rgb(149, 228, 240);
@@ -97,7 +98,7 @@
     top: 0;
     left: -18em;
     opacity: 0.2;
-    
+
     @include responsive(mobile) {
       width: 80%;
       left: -5em;
@@ -112,7 +113,7 @@
   &__card:not(:last-child):focus-within {
     transform: translateY(-1rem);
     transform: scale(1.05);
-    
+
     @include responsive(mobile) {
       transform: scale(1);
     }
