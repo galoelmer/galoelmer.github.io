@@ -1,7 +1,9 @@
 .navigation {
+  overflow: auto;
   background-color: #{$secondary};
   color: #fff;
   height: 100%;
+  min-width: 320px;
 }
 
 .navigation__header {
@@ -12,7 +14,6 @@
 .navigation__burger-menu {
   position: relative;
   display: inline-block;
-  
 
   @for $i from 1 through 3 {
     &-bar#{$i} {
@@ -49,7 +50,93 @@
 }
 
 .navigation__full-name {
-  flex: 1 1 auto;
+  flex: 1;
   justify-content: center;
   text-align: center;
+  padding-right: 1em;
+}
+
+.navigation__intro-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 0.6em;
+  }
+}
+
+.navigation__profile-picture {
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  margin-bottom: 1.2em;
+}
+
+.navigation__social-links svg {
+  margin: 1.5em 0.8em;
+}
+
+.navigation__break-line {
+  border-color: #fffbfb1c;
+  background-color: #fffbfb1c;
+  margin: 0 1em;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.navigation__links {
+  margin: 1.5em;
+
+  & li {
+    margin-bottom: 1em;
+    & span {
+      color: #bcc0c4;
+      font-size: 1.2em;
+      font-weight: bold;
+
+      & svg {
+        margin-right: 0.3em;
+      }
+    }
+
+    &:hover svg path {
+      fill: #119da4;
+    }
+
+    &:hover span {
+      color: #119da4;
+    }
+  }
+}
+
+.navigation__hire-me-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 94%;
+  height: 50px;
+  background-color: #119da4;
+  border: none;
+  border-radius: 0.3em;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 14px rgba(0, 0, 0, 0.3);
+
+  & svg {
+    margin-right: 0.3em;
+  }
+
+  &:active {
+    background-color: #10787e;
+  }
+  
 }
