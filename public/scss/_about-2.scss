@@ -1,0 +1,80 @@
+.about-page {
+  padding: 1.5em;
+}
+
+.about-page__introduction {
+  & h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  & h3 {
+    color: #bcc0c4;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  & p {
+    color: #bcc0c4;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+
+    & > a {
+      color: #119da4;
+    }
+  }
+}
+
+.about-page__links {
+  display: flex;
+
+  & > * {
+    display: block;
+    padding: 0.55em 1.2em;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.25em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &-portfolio,
+  &-resume {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      margin-right: 0.4em;
+    }
+  }
+
+  &-portfolio {
+    background-color: #119da4;
+    margin-right: 1em;
+
+    &:active {
+      background-color: #10787e;
+    }
+  }
+
+  &-resume {
+    background-color: #405a7c;
+
+    &:active {
+      background-color: #31455e;
+    }
+  }
+}
+
+.about-page__profile-picture {
+    margin-top: 2.5em;
+    & img {
+        width: 100%;
+        border-radius: 0.2em;
+    }
+}
