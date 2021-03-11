@@ -1,24 +1,31 @@
 .navigation {
-  display: block;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background-color: #{$secondary};
   color: #fff;
-  height: 70px;
-  min-width: 320px;
-  transition: all 0.5s ease;
+  width: 100%;
+
+  &__view {
+    padding: 0 1.2em;
+    visibility: hidden;
+    height: 0;
+    transition: height 0.5s ease;
+  }
 }
 
 .navigation__header {
+  flex: 1;
   display: flex;
+  align-items: center;
   padding: 1.2em;
 }
 
-.navigation__burger-menu {
+.navigation__burger-menu-icon {
   position: relative;
-  display: inline-block;
 
   @for $i from 1 through 3 {
-    &-bar#{$i} {
+    .burger-menu-icon-bar#{$i} {
       width: 30px;
       height: 4px;
       background-color: #fff;
@@ -27,35 +34,45 @@
       border-radius: 1px;
     }
   }
+}
 
-  & input {
-    position: absolute;
+// Hidden input tag of type check
+#burger-menu-checkbox {
+  position: absolute;
+  top: 1.5em;
+  left: 1.2em;
+  width: 35px;
+  height: 35px;
+  z-index: 9999;
+  opacity: 0;
+  cursor: pointer;
+
+  /*===  Apply transition-toggle to burger icon ===*/
+  &:checked + header .burger-menu-icon-bar1 {
+    transform: rotate(-45deg) translate(-9px, 7px);
+  }
+
+  &:checked + header .burger-menu-icon-bar2 {
     opacity: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    cursor: pointer;
+  }
 
-    /*===  Apply transition-toggle to burger icon ===*/
-    &:checked ~ .navigation__burger-menu-bar1 {
-      transform: rotate(-45deg) translate(-9px, 7px);
-    }
+  &:checked + header .burger-menu-icon-bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
 
-    &:checked ~ .navigation__burger-menu-bar2 {
-      opacity: 0;
-    }
-
-    &:checked ~ .navigation__burger-menu-bar3 {
-      transform: rotate(45deg) translate(-6px, -6px);
-    }
+  &:checked ~ .navigation__view {
+    visibility: visible;
+    height: 100vh;
   }
 }
 
 .navigation__full-name {
   flex: 1;
-  justify-content: center;
   text-align: center;
-  padding-right: 1em;
+  margin-right: 1em;
+  & > a {
+    color: #fff;
+  }
 }
 
 .navigation__intro-message {
@@ -81,16 +98,15 @@
 
 .navigation__social-links svg {
   margin: 1.5em 0.8em;
+
+  &:hover .a {
+    fill: #0e777c;
+  }
 }
 
 .navigation__break-line {
   border-color: #fffbfb1c;
   background-color: #fffbfb1c;
-  margin: 0 1em;
-}
-
-svg {
-  cursor: pointer;
 }
 
 .navigation__links {
@@ -118,6 +134,16 @@ svg {
   }
 }
 
+.active-link {
+  & svg path {
+    fill: #119da4;
+  }
+
+  & > a > span {
+    color: #119da4;
+  }
+}
+
 .navigation__hire-me-button {
   display: flex;
   justify-content: center;
@@ -125,19 +151,21 @@ svg {
   color: #fff;
   font-size: 1.2em;
   font-weight: bold;
-  width: 94%;
   height: 50px;
   background-color: #119da4;
   border: none;
   border-radius: 0.3em;
-  margin: 0 auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 14px rgba(0, 0, 0, 0.3);
 
   & svg {
     margin-right: 0.3em;
   }
 
+  &:hover {
+    background-color: #0e777c;
+  }
+
   &:active {
-    background-color: #10787e;
+    background-color: #10676b;
   }
 }
