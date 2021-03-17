@@ -432,6 +432,108 @@
   transform: translateX(2rem);
 }
 
+.portfolio-page {
+  padding: 1.5em;
+  min-width: 320px;
+}
+
+.portfolio-page__heading {
+  text-align: center;
+}
+
+.portfolio-page__heading h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+
+.portfolio-page__heading p {
+  color: #bcc0c4;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+.portfolio-page__hire-me-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  height: 45px;
+  width: 7.5em;
+  margin: 0 auto 2em;
+  background-color: #119da4;
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 14px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-page__hire-me-button svg {
+  margin-right: 0.3em;
+}
+
+.portfolio-page__hire-me-button:hover {
+  background-color: #0e777c;
+}
+
+.portfolio-page__hire-me-button:active {
+  background-color: #10676b;
+}
+
+.portfolio-page__break-line {
+  border-color: #fffbfb1c;
+  background-color: #fffbfb1c;
+  margin-bottom: 2em;
+}
+
+.portfolio-page__projects {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.85em;
+}
+
+.portfolio-page__projects-card {
+  border-radius: 0.25em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #1E2A3A;
+  margin-bottom: 1.5em;
+}
+
+.portfolio-page__projects-card-image {
+  width: 100%;
+  height: 50%;
+}
+
+.portfolio-page__projects-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+  height: 50%;
+}
+
+.portfolio-page__projects-card-info h3 {
+  margin-bottom: 0.6em;
+  text-decoration: underline;
+}
+
+.portfolio-page__projects-card-info p {
+  color: #bcc0c4;
+  font-size: 0.95em;
+  line-height: 1.4;
+  flex: 1;
+  margin-bottom: 1.9em;
+}
+
+.portfolio-page__projects-card-info .card-info-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolio-page__projects-card-info .card-info-icons svg {
+  margin-right: 0.65em;
+}
+
 .contact {
   height: 100vh;
   padding: 80px;
@@ -529,6 +631,7 @@
   background-color: #1E2A3A;
   color: #fff;
   width: 100%;
+  min-width: 320px;
 }
 
 .navigation__view {
@@ -603,6 +706,13 @@
 #burger-menu-checkbox:checked ~ .navigation__view {
   visibility: visible;
   height: 100vh;
+}
+
+@media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #burger-menu-checkbox:checked ~ .navigation__view {
+    height: 100%;
+    margin-bottom: 3em;
+  }
 }
 
 .navigation__full-name {
@@ -799,7 +909,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: #fff;
-  overflow-x: hidden;
+  overflow: auto;
   background-color: #111821;
 }
 

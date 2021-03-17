@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Elmer C. Galo Web Developer portfolio" />
+    <meta
+      name="keywords"
+      content="Web Developer,Portfolio,HTML,CSS,JavaScript,React"
+    />
+    <meta name="author" content="Elmer C. Galo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elmer's Portfolio Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+
+  <body>
+    <!--=====================================
+      =             Navigation                =
+      ======================================-->
+    <nav class="navigation">
+      <input id="burger-menu-checkbox" type="checkbox" />
+      <header class="navigation__header">
+        <div class="navigation__burger-menu-icon">
+          <div class="burger-menu-icon-bar1"></div>
+          <div class="burger-menu-icon-bar2"></div>
+          <div class="burger-menu-icon-bar3"></div>
+        </div>
+        <h1 class="navigation__full-name"><a href="#">Elmer Galo</a></h1>
+      </header>
+      <section class="navigation__view">
+        <div class="navigation__intro-message">
+          <img
+            class="navigation__profile-picture"
+            src="./public/img/profile-picture.jpg"
+            alt="Profile picture"
+          />
+          <p>
+            Hi, my name is Elmer C. Galo I'm a Front End Developer. Welcome to
+            my personal portfolio website!
+          </p>
+          <div class="navigation__social-links">
+            <a href="https://github.com/galoelmer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 36 36"
+              >
+                <defs>
+                  <style>
+                    .a {
+                      fill: #119da4;
+                    }
+
+                    .b {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-140 -351)">
+                  <path
+                    class="a"
+                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                    transform="translate(140 351)"
+                  />
+                  <path
+                    class="b"
+                    d="M8.085,16c0,.908-.474,2.394-1.594,2.394S4.9,16.908,4.9,16s.474-2.394,1.594-2.394S8.085,15.092,8.085,16Zm12.769-2.194a9.416,9.416,0,0,1-.76,4.127c-1.647,3.328-6.174,3.25-9.415,3.25-3.293,0-8.09.117-9.8-3.25A9.3,9.3,0,0,1,0,13.806,7.471,7.471,0,0,1,1.8,8.871a6.8,6.8,0,0,1-.335-2.12A4.326,4.326,0,0,1,2.1,4.5,6.788,6.788,0,0,1,6.83,6.064a16.641,16.641,0,0,1,3.854-.434,14.987,14.987,0,0,1,3.493.4A6.714,6.714,0,0,1,18.86,4.5a4.286,4.286,0,0,1,.634,2.25,6.705,6.705,0,0,1-.335,2.094A7.486,7.486,0,0,1,20.854,13.806ZM18.06,16c0-1.907-1.16-3.589-3.193-3.589a17.863,17.863,0,0,0-2.433.261,12.765,12.765,0,0,1-1.959.139,12.844,12.844,0,0,1-1.959-.139,17.573,17.573,0,0,0-2.433-.261c-2.033,0-3.193,1.681-3.193,3.589,0,3.815,3.493,4.4,6.534,4.4h2.094c3.054,0,6.543-.582,6.543-4.4Zm-3.589-2.394c-1.121,0-1.594,1.486-1.594,2.394s.474,2.394,1.594,2.394S16.066,16.908,16.066,16,15.593,13.606,14.472,13.606Z"
+                    transform="translate(148 356.158)"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/galoelmer/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 36 36"
+              >
+                <defs>
+                  <style>
+                    .a {
+                      fill: #119da4;
+                    }
+
+                    .b {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-196 -351)">
+                  <path
+                    class="a"
+                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                    transform="translate(196 351)"
+                  />
+                  <path
+                    class="b"
+                    d="M4.667,20.85H.344V6.93H4.667ZM2.5,5.031A2.515,2.515,0,1,1,5.007,2.5,2.525,2.525,0,0,1,2.5,5.031ZM20.845,20.85H16.532V14.074c0-1.615-.033-3.686-2.247-3.686-2.247,0-2.592,1.755-2.592,3.57V20.85H7.375V6.93h4.146v1.9h.061a4.542,4.542,0,0,1,4.09-2.248c4.375,0,5.179,2.881,5.179,6.623V20.85Z"
+                    transform="translate(204.5 356.492)"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="navigation__break-line" />
+        <ul class="navigation__links">
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.01"
+                  height="20.01"
+                  viewBox="0 0 20.01 20.01"
+                >
+                  <path
+                    data-name="About Me Link"
+                    d="M10,11.256A5.628,5.628,0,1,0,4.377,5.628,5.629,5.629,0,0,0,10,11.256Zm5,1.251H12.854a6.8,6.8,0,0,1-5.7,0H5a5,5,0,0,0-5,5v.625A1.876,1.876,0,0,0,1.876,20.01H18.134a1.876,1.876,0,0,0,1.876-1.876v-.625A5,5,0,0,0,15.007,12.506Z"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                About Me</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link active-link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22.01"
+                  height="17.608"
+                  viewBox="0 0 22.01 17.608"
+                >
+                  <path
+                    data-name="Portfolio Link"
+                    d="M8.771,9a.55.55,0,0,0,.778,0l.389-.389a.55.55,0,0,0,0-.778L8.709,6.6,9.938,5.375a.55.55,0,0,0,0-.778l-.389-.389a.55.55,0,0,0-.778,0L6.764,6.214a.55.55,0,0,0,0,.778L8.771,9Zm3.3-.389L12.461,9a.55.55,0,0,0,.778,0l2.006-2.006a.55.55,0,0,0,0-.778L13.24,4.208a.55.55,0,0,0-.778,0l-.389.389a.55.55,0,0,0,0,.778L13.3,6.6,12.072,7.831a.55.55,0,0,0,0,.778Zm9.387,5.7H13.121A1.084,1.084,0,0,1,12,15.407H9.9a1.168,1.168,0,0,1-1.127-1.1H.55a.552.552,0,0,0-.55.55v.55a2.207,2.207,0,0,0,2.2,2.2H19.809a2.207,2.207,0,0,0,2.2-2.2v-.55A.552.552,0,0,0,21.46,14.306ZM19.809,1.651A1.656,1.656,0,0,0,18.158,0H3.852A1.656,1.656,0,0,0,2.2,1.651V13.206H19.809ZM17.608,11H4.4V2.2H17.608Z"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Portfolio</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.25"
+                  height="19.25"
+                  viewBox="0 0 19.25 19.25"
+                >
+                  <path
+                    data-name="Resume Link"
+                    d="M6.892,4.856v14.9a.65.65,0,0,1-.648.648h0a.65.65,0,0,1-.648-.648V6.337h-.74A1.479,1.479,0,0,0,3.375,7.817V21.144a1.479,1.479,0,0,0,1.481,1.481H21.2a1.431,1.431,0,0,0,1.43-1.43V4.856a1.479,1.479,0,0,0-1.481-1.481L8.28,3.468A1.326,1.326,0,0,0,6.892,4.856ZM9.946,6.337h3.887a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946A.65.65,0,0,1,9.3,6.984h0A.65.65,0,0,1,9.946,6.337Zm0,7.4h6.849a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946a.65.65,0,0,1-.648-.648h0A.65.65,0,0,1,9.946,13.74Zm9.07,5H9.946A.65.65,0,0,1,9.3,18.09h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,18.738Zm0-7.4H9.946a.65.65,0,0,1-.648-.648h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,11.334Z"
+                    transform="translate(-3.375 -3.375)"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Resume</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.99"
+                  height="22.489"
+                  viewBox="0 0 20.99 22.489"
+                >
+                  <path
+                    data-name="Contact Link"
+                    d="M17.992,10.924H10.5v1.5h7.5Zm-4.5-3h-3v1.5h3Zm9-.643V4.927h-3.3l-4.2-3-4.2,3H7.5V7.282l-3,2.143V24.417h20.99V9.424l-3-2.143ZM9,6.426H20.991v5.735l-6,4.947L9,12.161V6.426Zm-3,6,5.9,4.489L6,21.419v-9ZM7.5,22.918l5.95-4.832,1.546,1.177,1.543-1.174,5.953,4.829H7.5Zm16.492-1.5-5.912-4.5,5.912-4.5v9Z"
+                    transform="translate(-4.499 -1.928)"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Contact</span
+              ></a
+            >
+          </li>
+        </ul>
+        <a href="#" class="navigation__hire-me-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="20"
+            viewBox="0 0 30.971 22.445"
+          >
+            <path
+              data-name="Hire me Link"
+              d="M6.717,4.055l4.165,4.507L7.943,14.354l6.2-1.112,2.825,6.815,12-15.734Zm-.768,9.763,1.155-.95-1.49.471-.152-.217.616-.6-.808.326a8.222,8.222,0,0,0-2.7,13.65,8.164,8.164,0,0,1-1.068-4.05A8.428,8.428,0,0,1,6.715,14.7l.38-.925-.905.4-.255-.344.013-.013Zm5.268-2.378,1.929-3.405L24.49,5.378Z"
+              transform="translate(0 -4.055)"
+              fill="#fff"
+            />
+          </svg>
+          Hire Me
+        </a>
+      </section>
+    </nav>
+    <!--=====================================
+    =          Portfolio Page               =
+    ======================================-->
+    <main>
+      <section class="portfolio-page">
+        <section class="portfolio-page__heading">
+          <h1>Portfolio</h1>
+          <p>
+            Welcome to my online portfolio. These are some of the applications I
+            created.
+          </p>
+          <a href="#" class="portfolio-page__hire-me-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="20"
+              viewBox="0 0 30.971 22.445"
+            >
+              <path
+                data-name="Hire me Link"
+                d="M6.717,4.055l4.165,4.507L7.943,14.354l6.2-1.112,2.825,6.815,12-15.734Zm-.768,9.763,1.155-.95-1.49.471-.152-.217.616-.6-.808.326a8.222,8.222,0,0,0-2.7,13.65,8.164,8.164,0,0,1-1.068-4.05A8.428,8.428,0,0,1,6.715,14.7l.38-.925-.905.4-.255-.344.013-.013Zm5.268-2.378,1.929-3.405L24.49,5.378Z"
+                transform="translate(0 -4.055)"
+                fill="#fff"
+              />
+            </svg>
+            Hire Me
+          </a>
+        </section>
+        <hr class="portfolio-page__break-line" />
+        <section class="portfolio-page__projects">
+          <div class="portfolio-page__projects-card">
+            <img
+              class="portfolio-page__projects-card-image"
+              src="https://picsum.photos/250/150"
+              alt="random picture"
+            />
+            <div class="portfolio-page__projects-card-info">
+              <h3>Heading</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, accusamus tempora! Doloribus vitae voluptatibus
+                cupiditate.
+              </p>
+              <div class="card-info-icons">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17.935"
+                  height="19.252"
+                  viewBox="0 0 13.935 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-html5"
+                    d="M0,2.25,1.266,15.725,6.949,17.5l5.719-1.777L13.935,2.25ZM11.184,6.6H4.514l.149,1.682h6.372l-.494,5.052-3.553.919v.01h-.04l-3.582-.929L3.15,10.758H4.881l.127,1.3,1.941.494L8.9,12.055l.218-2.118H3.059L2.595,4.98h8.749L11.184,6.6Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.885"
+                  height="19.252"
+                  viewBox="0 0 12.885 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-css3-alt"
+                    d="M0,2.25,1.171,15.725,6.442,17.5l5.271-1.777L12.885,2.25ZM10.506,4.974l-.161,1.61L6.476,8.262l-.01,0h3.741l-.429,4.991-3.3.977L3.168,13.24l-.215-2.516H4.594l.107,1.3,1.765.453L8.3,11.956l.124-2.1-5.58-.017v0l-.007,0L2.718,8.266l3.761-1.59L6.7,6.584H2.574l-.195-1.61Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.252"
+                  height="19.252"
+                  viewBox="0 0 15.252 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-js-square"
+                    d="M13.618,2.25H1.634A1.635,1.635,0,0,0,0,3.884V15.868A1.635,1.635,0,0,0,1.634,17.5H13.618a1.635,1.635,0,0,0,1.634-1.634V3.884A1.635,1.635,0,0,0,13.618,2.25ZM8.3,14.145a1.949,1.949,0,0,1-2.141,2.162A2.227,2.227,0,0,1,4.007,15l1.168-.7c.225.4.429.735.923.735.47,0,.769-.184.769-.9V9.253H8.3Zm3.391,2.162A2.751,2.751,0,0,1,9.08,14.843l1.168-.674a1.564,1.564,0,0,0,1.413.872c.592,0,.974-.3.974-.708,0-.49-.388-.664-1.045-.953l-.357-.153c-1.035-.439-1.719-.994-1.719-2.162a1.915,1.915,0,0,1,2.1-1.893,2.111,2.111,0,0,1,2.036,1.147l-1.117.715a.975.975,0,0,0-.923-.613.622.622,0,0,0-.684.613c0,.429.266.6.882.872l.357.153c1.219.521,1.9,1.055,1.9,2.254C14.064,15.6,13.05,16.307,11.691,16.307Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-page__projects-card">
+            <img
+              class="portfolio-page__projects-card-image"
+              src="https://picsum.photos/250"
+              alt="random picture"
+            />
+            <div class="portfolio-page__projects-card-info">
+              <h3>Heading</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, accusamus tempora! Doloribus vitae voluptatibus
+                cupiditate.
+              </p>
+              <div class="card-info-icons">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17.935"
+                  height="19.252"
+                  viewBox="0 0 13.935 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-html5"
+                    d="M0,2.25,1.266,15.725,6.949,17.5l5.719-1.777L13.935,2.25ZM11.184,6.6H4.514l.149,1.682h6.372l-.494,5.052-3.553.919v.01h-.04l-3.582-.929L3.15,10.758H4.881l.127,1.3,1.941.494L8.9,12.055l.218-2.118H3.059L2.595,4.98h8.749L11.184,6.6Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.885"
+                  height="19.252"
+                  viewBox="0 0 12.885 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-css3-alt"
+                    d="M0,2.25,1.171,15.725,6.442,17.5l5.271-1.777L12.885,2.25ZM10.506,4.974l-.161,1.61L6.476,8.262l-.01,0h3.741l-.429,4.991-3.3.977L3.168,13.24l-.215-2.516H4.594l.107,1.3,1.765.453L8.3,11.956l.124-2.1-5.58-.017v0l-.007,0L2.718,8.266l3.761-1.59L6.7,6.584H2.574l-.195-1.61Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.252"
+                  height="19.252"
+                  viewBox="0 0 15.252 15.252"
+                >
+                  <path
+                    data-name="Icon awesome-js-square"
+                    d="M13.618,2.25H1.634A1.635,1.635,0,0,0,0,3.884V15.868A1.635,1.635,0,0,0,1.634,17.5H13.618a1.635,1.635,0,0,0,1.634-1.634V3.884A1.635,1.635,0,0,0,13.618,2.25ZM8.3,14.145a1.949,1.949,0,0,1-2.141,2.162A2.227,2.227,0,0,1,4.007,15l1.168-.7c.225.4.429.735.923.735.47,0,.769-.184.769-.9V9.253H8.3Zm3.391,2.162A2.751,2.751,0,0,1,9.08,14.843l1.168-.674a1.564,1.564,0,0,0,1.413.872c.592,0,.974-.3.974-.708,0-.49-.388-.664-1.045-.953l-.357-.153c-1.035-.439-1.719-.994-1.719-2.162a1.915,1.915,0,0,1,2.1-1.893,2.111,2.111,0,0,1,2.036,1.147l-1.117.715a.975.975,0,0,0-.923-.613.622.622,0,0,0-.684.613c0,.429.266.6.882.872l.357.153c1.219.521,1.9,1.055,1.9,2.254C14.064,15.6,13.05,16.307,11.691,16.307Z"
+                    transform="translate(0 -2.25)"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

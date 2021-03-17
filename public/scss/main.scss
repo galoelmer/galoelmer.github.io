@@ -2,6 +2,7 @@
 @import "navigation";
 @import "about";
 @import "portfolio";
+@import "portfolio-2";
 @import "contact";
 @import "social-nav";
 @import "navigation-2";
@@ -19,7 +20,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   color: #fff;
-  overflow-x: hidden;
+  overflow: auto;
   background-color: #{$primary};
 }
 

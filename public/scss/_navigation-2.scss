@@ -5,6 +5,7 @@
   background-color: #{$secondary};
   color: #fff;
   width: 100%;
+  min-width: 320px;
 
   &__view {
     padding: 0 1.2em;
@@ -63,6 +64,13 @@
   &:checked ~ .navigation__view {
     visibility: visible;
     height: 100vh;
+
+    @media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      & {
+        height: 100%;
+        margin-bottom: 3em;
+      }
+    }
   }
 }
 
