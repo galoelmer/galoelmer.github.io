@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Elmer C. Galo Web Developer portfolio" />
+    <meta
+      name="keywords"
+      content="Web Developer,Portfolio,HTML,CSS,JavaScript,React"
+    />
+    <meta name="author" content="Elmer C. Galo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elmer's Resume Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+
+  <body>
+    <!--=====================================
+      =             Navigation                =
+      ======================================-->
+    <nav class="navigation">
+      <input id="burger-menu-checkbox" type="checkbox" />
+      <header class="navigation__header">
+        <div class="navigation__burger-menu-icon">
+          <div class="burger-menu-icon-bar1"></div>
+          <div class="burger-menu-icon-bar2"></div>
+          <div class="burger-menu-icon-bar3"></div>
+        </div>
+        <h1 class="navigation__full-name"><a href="#">Elmer Galo</a></h1>
+      </header>
+      <section class="navigation__view">
+        <div class="navigation__intro-message">
+          <img
+            class="navigation__profile-picture"
+            src="./public/img/profile-picture.jpg"
+            alt="Profile picture"
+          />
+          <p>
+            Hi, my name is Elmer C. Galo I'm a Front End Developer. Welcome to
+            my personal portfolio website!
+          </p>
+          <div class="navigation__social-links">
+            <a href="https://github.com/galoelmer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 36 36"
+              >
+                <defs>
+                  <style>
+                    .a {
+                      fill: #119da4;
+                    }
+
+                    .b {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-140 -351)">
+                  <path
+                    class="a"
+                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                    transform="translate(140 351)"
+                  />
+                  <path
+                    class="b"
+                    d="M8.085,16c0,.908-.474,2.394-1.594,2.394S4.9,16.908,4.9,16s.474-2.394,1.594-2.394S8.085,15.092,8.085,16Zm12.769-2.194a9.416,9.416,0,0,1-.76,4.127c-1.647,3.328-6.174,3.25-9.415,3.25-3.293,0-8.09.117-9.8-3.25A9.3,9.3,0,0,1,0,13.806,7.471,7.471,0,0,1,1.8,8.871a6.8,6.8,0,0,1-.335-2.12A4.326,4.326,0,0,1,2.1,4.5,6.788,6.788,0,0,1,6.83,6.064a16.641,16.641,0,0,1,3.854-.434,14.987,14.987,0,0,1,3.493.4A6.714,6.714,0,0,1,18.86,4.5a4.286,4.286,0,0,1,.634,2.25,6.705,6.705,0,0,1-.335,2.094A7.486,7.486,0,0,1,20.854,13.806ZM18.06,16c0-1.907-1.16-3.589-3.193-3.589a17.863,17.863,0,0,0-2.433.261,12.765,12.765,0,0,1-1.959.139,12.844,12.844,0,0,1-1.959-.139,17.573,17.573,0,0,0-2.433-.261c-2.033,0-3.193,1.681-3.193,3.589,0,3.815,3.493,4.4,6.534,4.4h2.094c3.054,0,6.543-.582,6.543-4.4Zm-3.589-2.394c-1.121,0-1.594,1.486-1.594,2.394s.474,2.394,1.594,2.394S16.066,16.908,16.066,16,15.593,13.606,14.472,13.606Z"
+                    transform="translate(148 356.158)"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/galoelmer/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 36 36"
+              >
+                <defs>
+                  <style>
+                    .a {
+                      fill: #119da4;
+                    }
+
+                    .b {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-196 -351)">
+                  <path
+                    class="a"
+                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                    transform="translate(196 351)"
+                  />
+                  <path
+                    class="b"
+                    d="M4.667,20.85H.344V6.93H4.667ZM2.5,5.031A2.515,2.515,0,1,1,5.007,2.5,2.525,2.525,0,0,1,2.5,5.031ZM20.845,20.85H16.532V14.074c0-1.615-.033-3.686-2.247-3.686-2.247,0-2.592,1.755-2.592,3.57V20.85H7.375V6.93h4.146v1.9h.061a4.542,4.542,0,0,1,4.09-2.248c4.375,0,5.179,2.881,5.179,6.623V20.85Z"
+                    transform="translate(204.5 356.492)"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="navigation__break-line" />
+        <ul class="navigation__links">
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.01"
+                  height="20.01"
+                  viewBox="0 0 20.01 20.01"
+                >
+                  <path
+                    data-name="About Me Link"
+                    d="M10,11.256A5.628,5.628,0,1,0,4.377,5.628,5.629,5.629,0,0,0,10,11.256Zm5,1.251H12.854a6.8,6.8,0,0,1-5.7,0H5a5,5,0,0,0-5,5v.625A1.876,1.876,0,0,0,1.876,20.01H18.134a1.876,1.876,0,0,0,1.876-1.876v-.625A5,5,0,0,0,15.007,12.506Z"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                About Me</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22.01"
+                  height="17.608"
+                  viewBox="0 0 22.01 17.608"
+                >
+                  <path
+                    data-name="Portfolio Link"
+                    d="M8.771,9a.55.55,0,0,0,.778,0l.389-.389a.55.55,0,0,0,0-.778L8.709,6.6,9.938,5.375a.55.55,0,0,0,0-.778l-.389-.389a.55.55,0,0,0-.778,0L6.764,6.214a.55.55,0,0,0,0,.778L8.771,9Zm3.3-.389L12.461,9a.55.55,0,0,0,.778,0l2.006-2.006a.55.55,0,0,0,0-.778L13.24,4.208a.55.55,0,0,0-.778,0l-.389.389a.55.55,0,0,0,0,.778L13.3,6.6,12.072,7.831a.55.55,0,0,0,0,.778Zm9.387,5.7H13.121A1.084,1.084,0,0,1,12,15.407H9.9a1.168,1.168,0,0,1-1.127-1.1H.55a.552.552,0,0,0-.55.55v.55a2.207,2.207,0,0,0,2.2,2.2H19.809a2.207,2.207,0,0,0,2.2-2.2v-.55A.552.552,0,0,0,21.46,14.306ZM19.809,1.651A1.656,1.656,0,0,0,18.158,0H3.852A1.656,1.656,0,0,0,2.2,1.651V13.206H19.809ZM17.608,11H4.4V2.2H17.608Z"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Portfolio</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link active-link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19.25"
+                  height="19.25"
+                  viewBox="0 0 19.25 19.25"
+                >
+                  <path
+                    data-name="Resume Link"
+                    d="M6.892,4.856v14.9a.65.65,0,0,1-.648.648h0a.65.65,0,0,1-.648-.648V6.337h-.74A1.479,1.479,0,0,0,3.375,7.817V21.144a1.479,1.479,0,0,0,1.481,1.481H21.2a1.431,1.431,0,0,0,1.43-1.43V4.856a1.479,1.479,0,0,0-1.481-1.481L8.28,3.468A1.326,1.326,0,0,0,6.892,4.856ZM9.946,6.337h3.887a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946A.65.65,0,0,1,9.3,6.984h0A.65.65,0,0,1,9.946,6.337Zm0,7.4h6.849a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946a.65.65,0,0,1-.648-.648h0A.65.65,0,0,1,9.946,13.74Zm9.07,5H9.946A.65.65,0,0,1,9.3,18.09h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,18.738Zm0-7.4H9.946a.65.65,0,0,1-.648-.648h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,11.334Z"
+                    transform="translate(-3.375 -3.375)"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Resume</span
+              ></a
+            >
+          </li>
+          <li class="navigation__link">
+            <a href="#"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20.99"
+                  height="22.489"
+                  viewBox="0 0 20.99 22.489"
+                >
+                  <path
+                    data-name="Contact Link"
+                    d="M17.992,10.924H10.5v1.5h7.5Zm-4.5-3h-3v1.5h3Zm9-.643V4.927h-3.3l-4.2-3-4.2,3H7.5V7.282l-3,2.143V24.417h20.99V9.424l-3-2.143ZM9,6.426H20.991v5.735l-6,4.947L9,12.161V6.426Zm-3,6,5.9,4.489L6,21.419v-9ZM7.5,22.918l5.95-4.832,1.546,1.177,1.543-1.174,5.953,4.829H7.5Zm16.492-1.5-5.912-4.5,5.912-4.5v9Z"
+                    transform="translate(-4.499 -1.928)"
+                    fill="#bcc0c4"
+                  />
+                </svg>
+                Contact</span
+              ></a
+            >
+          </li>
+        </ul>
+        <a href="#" class="navigation__hire-me-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="20"
+            viewBox="0 0 30.971 22.445"
+          >
+            <path
+              data-name="Hire me Link"
+              d="M6.717,4.055l4.165,4.507L7.943,14.354l6.2-1.112,2.825,6.815,12-15.734Zm-.768,9.763,1.155-.95-1.49.471-.152-.217.616-.6-.808.326a8.222,8.222,0,0,0-2.7,13.65,8.164,8.164,0,0,1-1.068-4.05A8.428,8.428,0,0,1,6.715,14.7l.38-.925-.905.4-.255-.344.013-.013Zm5.268-2.378,1.929-3.405L24.49,5.378Z"
+              transform="translate(0 -4.055)"
+              fill="#fff"
+            />
+          </svg>
+          Hire Me
+        </a>
+      </section>
+    </nav>
+    <!--=====================================
+    =             Resume Page               =
+    ======================================-->
+    <main>
+      <section class="resume-page">
+        <section class="resume-page__heading">
+          <h1>Online Resume</h1>
+          <a href="#" class="resume-page__download-pdf-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13.35"
+              height="17.8"
+              viewBox="0 0 13.35 17.8"
+            >
+              <path
+                id="Icon_awesome-file-pdf"
+                data-name="Icon awesome-file-pdf"
+                d="M6.324,8.9a3.354,3.354,0,0,1-.07-1.631C6.546,7.273,6.519,8.556,6.324,8.9Zm-.059,1.641a16.042,16.042,0,0,1-.987,2.18,12.8,12.8,0,0,1,2.187-.761A4.5,4.5,0,0,1,6.265,10.544ZM2.993,14.883c0,.028.459-.188,1.213-1.4A4.805,4.805,0,0,0,2.993,14.883ZM8.622,5.562H13.35v11.4a.832.832,0,0,1-.834.834H.834A.832.832,0,0,1,0,16.966V.834A.832.832,0,0,1,.834,0H7.788V4.728A.837.837,0,0,0,8.622,5.562Zm-.278,5.973a3.489,3.489,0,0,1-1.484-1.87,5,5,0,0,0,.216-2.232A.871.871,0,0,0,5.413,7.2a5.781,5.781,0,0,0,.282,2.677,32.646,32.646,0,0,1-1.418,2.983s0,0-.007,0c-.942.483-2.559,1.547-1.895,2.364a1.08,1.08,0,0,0,.747.348c.622,0,1.241-.626,2.124-2.149a19.817,19.817,0,0,1,2.746-.807,5.269,5.269,0,0,0,2.225.678.9.9,0,0,0,.685-1.509C10.419,11.313,9.015,11.448,8.344,11.535ZM13.107,3.65,9.7.243A.834.834,0,0,0,9.109,0H8.9V4.45h4.45V4.238A.832.832,0,0,0,13.107,3.65Zm-2.576,8.876c.143-.094-.087-.414-1.488-.313C10.332,12.762,10.531,12.526,10.531,12.526Z"
+                fill="#fff"
+              />
+            </svg>
+            Download PDF Version
+          </a>
+        </section>
+        <hr class="resume-page__break-line" />
+        <section class="resume-page__resume-view">
+          <div class="resume-page__personal-info">
+            <div class="resume-page__personal-info-job-title">
+              <h1>Elmer Galo</h1>
+              <h3>Front-End Developer</h3>
+            </div>
+            <ul class="resume-page__personal-info-contact">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.42"
+                  height="13.42"
+                  viewBox="0 0 13.42 13.42"
+                >
+                  <path
+                    data-name="Icon awesome-phone-square"
+                    d="M11.982,2.25H1.438A1.438,1.438,0,0,0,0,3.688V14.232A1.438,1.438,0,0,0,1.438,15.67H11.982a1.438,1.438,0,0,0,1.438-1.438V3.688A1.438,1.438,0,0,0,11.982,2.25Zm-9.166,11.5a.449.449,0,0,1-.438-.348l-.449-1.947a.449.449,0,0,1,.261-.514l2.1-.9a.449.449,0,0,1,.525.128l.929,1.135A6.945,6.945,0,0,0,9.058,7.99L7.923,7.061a.449.449,0,0,1-.128-.525l.9-2.1a.449.449,0,0,1,.514-.261l1.947.449a.449.449,0,0,1,.348.438A8.687,8.687,0,0,1,2.816,13.753Z"
+                    transform="translate(0 -2.25)"
+                    fill="#949494"
+                  />
+                </svg>
+                <a href="tel:+01-336-508-0497">
+                  <span>336-508-0497</span>
+                </a>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.42"
+                  height="12.292"
+                  viewBox="0 0 13.42 12.292"
+                >
+                  <g
+                    data-name="Icon ionic-ios-mail"
+                    transform="translate(-3.375 -7.875)"
+                  >
+                    <path
+                      d="M16.685,10.338,13.214,14.6a.086.086,0,0,0,0,.109l2.429,3.12a.581.581,0,0,1,0,.716.372.372,0,0,1-.594,0L12.63,15.437a.059.059,0,0,0-.094,0l-.59.723a2.4,2.4,0,0,1-1.852.941,2.454,2.454,0,0,1-1.89-.969l-.568-.7a.059.059,0,0,0-.094,0L5.123,18.545a.372.372,0,0,1-.594,0,.581.581,0,0,1,0-.716l2.429-3.12a.1.1,0,0,0,0-.109L3.485,10.338c-.042-.051-.11-.016-.11.054v8.53a1.157,1.157,0,0,0,1.032,1.245H15.763a1.157,1.157,0,0,0,1.032-1.245v-8.53C16.795,10.322,16.724,10.291,16.685,10.338Z"
+                      transform="translate(0 0)"
+                      fill="#949494"
+                    />
+                    <path
+                      d="M10.087,19.022c.443,0,.859-.353,1.17-1L15.951,8.3a.743.743,0,0,0-.592-.426H4.818a.739.739,0,0,0-.592.426L8.92,18.024C9.228,18.663,9.644,19.022,10.087,19.022Z"
+                      transform="translate(0 0)"
+                      fill="#949494"
+                    />
+                  </g>
+                </svg>
+                <a href="mailto:galoelmer@gmail.com">
+                  <span>elmer.galo@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.42"
+                  height="13.42"
+                  viewBox="0 0 13.42 13.42"
+                >
+                  <path
+                    data-name="Icon awesome-link"
+                    d="M8.561,4.859a3.982,3.982,0,0,1,.009,5.625l-.009.01L6.8,12.255A3.984,3.984,0,0,1,1.165,6.621l.973-.973a.419.419,0,0,1,.715.278,4.83,4.83,0,0,0,.254,1.382.422.422,0,0,1-.1.435l-.343.343a1.887,1.887,0,1,0,2.652,2.686L7.078,9.011a1.887,1.887,0,0,0,0-2.669,1.963,1.963,0,0,0-.271-.225.42.42,0,0,1-.182-.33,1.044,1.044,0,0,1,.307-.781l.552-.552a.421.421,0,0,1,.54-.045,4,4,0,0,1,.538.451Zm3.694-3.694a3.989,3.989,0,0,0-5.634,0L4.859,2.926l-.009.01A3.985,3.985,0,0,0,5.4,9.011a.421.421,0,0,0,.54-.045l.552-.552A1.044,1.044,0,0,0,6.8,7.633a.42.42,0,0,0-.182-.33,1.964,1.964,0,0,1-.271-.225,1.887,1.887,0,0,1,0-2.669L8.1,2.648a1.887,1.887,0,1,1,2.652,2.686l-.343.343a.422.422,0,0,0-.1.435,4.83,4.83,0,0,1,.254,1.382.419.419,0,0,0,.715.278l.973-.973a3.988,3.988,0,0,0,0-5.634Z"
+                    transform="translate(0 0)"
+                    fill="#949494"
+                  />
+                </svg>
+                <a href="https://galoelmer.github.io/">
+                  <span>galoelmer.github.io</span>
+                </a>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14.495"
+                  height="13.42"
+                  viewBox="0 0 8.495 13.42"
+                >
+                  <path
+                    data-name="Icon material-location-on"
+                    d="M11.747,3A4.486,4.486,0,0,0,7.5,7.7c0,3.523,4.247,8.723,4.247,8.723s4.247-5.2,4.247-8.723A4.486,4.486,0,0,0,11.747,3Zm0,6.375A1.6,1.6,0,0,1,10.23,7.7a1.6,1.6,0,0,1,1.517-1.678A1.6,1.6,0,0,1,13.264,7.7,1.6,1.6,0,0,1,11.747,9.375Z"
+                    transform="translate(-7.5 -3)"
+                    fill="#949494"
+                  />
+                </svg>
+                Greensboro, NC
+              </li>
+            </ul>
+          </div>
+          <hr class="resume-page__break-line" />
+          <div class="resume-page__objective">
+            <img src="./public/img/profile-picture.jpg" alt="Profile picture" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+              quis? Corporis blanditiis tempore labore corrupti dolor commodi
+              autem consequuntur cupiditate.
+            </p>
+          </div>
+          <hr class="resume-page__break-line" />
+          <div class="resume-page__work-experience">
+            <h3>Work Experience</h3>
+            <h5>Web Developer</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem nulla distinctio quidem voluptate, natus ut esse
+              recusandae doloremque veniam blanditiis.
+            </p>
+          </div>
+          <hr class="resume-page__break-line" />
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

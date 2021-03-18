@@ -1,0 +1,154 @@
+.resume-page {
+  padding: 1.3em;
+  min-width: 320px;
+
+  &__heading {
+    text-align: center;
+
+    & h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.3em;
+    }
+  }
+
+  &__download-pdf-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    height: 42px;
+    width: 14em;
+    margin: 0 auto 2em;
+    background-color: #119da4;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 14px rgba(0, 0, 0, 0.3);
+
+    & svg {
+      margin-right: 0.4em;
+    }
+
+    &:hover {
+      background-color: #0e777c;
+    }
+
+    &:active {
+      background-color: #10676b;
+    }
+  }
+}
+
+.resume-page__break-line {
+  border-color: #fffbfb1c;
+  background-color: #fffbfb1c;
+}
+
+.resume-page__resume-view {
+  color: #949494;
+  background-color: #151e29;
+  border-radius: 0.15em;
+  padding: 3em;
+  margin-top: 2em;
+}
+
+.resume-page__personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+
+  &-job-title {
+    flex: 1;
+  }
+
+  & h1 {
+    color: #fffffff1;
+    font-size: 2.75em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+    & a {
+      color: #949494;
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      font-size: 0.85em;
+      margin-bottom: 0.5em;
+
+      & svg {
+        margin-right: 0.5em;
+      }
+
+      & span:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.resume-page__objective {
+  display: flex;
+  // align-items: center;
+  font-size: 0.9em;
+  padding: 1.5em 0;
+  line-height: 1.5;
+
+  & img {
+    display: block;
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    margin: 0 auto 1em;
+    filter: grayscale(100%);
+  }
+}
+
+.resume-page__work-experience {
+  padding: 1.5em 0;
+  color: #fffffff1; 
+  
+  & h3 {
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 0.75em;
+    margin-bottom: 1.25em;
+    line-height: 1.2;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background-color: #119da4;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  & h5 {
+    margin-bottom: 1em;
+  }
+
+  & p {
+    color: #949494;
+    font-size: 0.85em;
+    line-height: 1.5;
+  }
+}
