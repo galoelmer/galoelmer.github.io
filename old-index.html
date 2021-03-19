@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Elmer C. Galo Web Developer portfolio" />
+    <meta
+      name="keywords"
+      content="Web Developer,Portfolio,HTML,CSS,JavaScript,React"
+    />
+    <meta name="author" content="Elmer C. Galo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elmer - Web Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vke5ywu.css" />
+    <script src="https://kit.fontawesome.com/4e9b7588d9.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <div class="logo">
+        <img class="logo__img" src="./public/img/logo.png" alt="My Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-menu__item">
+          <a href="#portfolio" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/portfolio-icon.png"
+                alt="Portfolio icon"
+              />Portfolio</span
+            ></a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a href="#contact" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/contact-icon.png"
+                alt="Contact icon"
+              />Contact</span
+            ></a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a href="./public/img/carrascoElmer_CV.pdf" class="nav-menu__link"
+            ><span class="nav-menu__icon"
+              ><img
+                src="./public/img/resume-icon.png"
+                alt="Resume icon"
+              />Resume</span
+            ></a
+          >
+        </li>
+      </ul>
+      <button
+        onclick="topFunction()"
+        class="scroll-to-top-button"
+        title="Go to top"
+      >
+        Top
+      </button>
+    </nav>
+
+    <main>
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="about-bio">
+          <h2 class="about-bio__introduction">
+            Hello, <br />
+            I'm Elmer C. Galo
+          </h2>
+          <h5 class="about-bio__job-title">Web Developer</h5>
+        </div>
+        <div class="about-picture">
+          <img
+            class="profile-picture"
+            src="./public/img/profile-picture.jpg"
+            alt="Elmer C. Galo Picture"
+          />
+          <div class="about-picture__location">
+            <img
+              class="location-icon"
+              src="./public/img/location-icon.png"
+              alt="Location icon"
+            />Greensboro, NC
+          </div>
+        </div>
+        <img
+          class="about__illustration"
+          src="./public/img/Illustration-1.png"
+          alt="Background illustration"
+        />
+        <!-- Portfolio Section -->
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__heading">My Projects</h2>
+        <div class="portfolio__cards">
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card-image"
+              src="./public/img/react-click-game.png"
+            />
+            <div class="portfolio__card-links">
+              <a
+                href="https://github.com/galoelmer/react-click-game"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://react-click-game.web.app/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card-image"
+              src="./public/img/scraper-news.png"
+            />
+            <div class="portfolio__card-links">
+              <a
+                href="https://github.com/galoelmer/tech-news-scraper"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://scraper-tech-news.herokuapp.com/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card-image"
+              src="./public/img/trivia-game.png"
+            />
+            <div class="portfolio__card-links">
+              <a href="https://github.com/galoelmer/TriviaGame" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://galoelmer.github.io/TriviaGame/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img class="portfolio__card-image" src="./public/img/bmazon.gif" />
+            <div class="portfolio__card-links">
+              <a href="https://github.com/galoelmer/bmazon-app" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__card">
+            <img
+              class="portfolio__card-image"
+              src="./public/img/giphy-api.gif"
+            />
+            <div class="portfolio__card-links">
+              <a href="https://github.com/galoelmer/giphy-api" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://galoelmer.github.io/giphy-api/" target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <img
+          class="portfolio__illustration"
+          src="./public//img/Ilustration-2.png"
+          alt="Background illustration"
+        />
+      </section>
+      <!-- Contact section -->
+      <section id="contact" class="contact">
+        <h2 class="contact__heading">Contact</h2>
+        <div class="contact__info">
+          <div class="contact__email">
+            <a href="mailto: galoelmer@gmail.com">galoelmer@gmail.com</a>
+          </div>
+          <div class="contact__phone">
+            <a href="tel:3365080497">Call (336)508-0497</a>
+          </div>
+          <img
+            class="contact__illustration"
+            src="./public/img/illustration-3.png"
+            alt="Contact Illustration"
+          />
+        </div>
+      </section>
+      <!-- Social Nav Section -->
+      <section class="social-nav">
+        <a
+          class="social-nav__icon"
+          href="https://www.linkedin.com/in/elmer-carrasco-4160a3191/"
+          target="_blank"
+          ><img src="./public/img/linkedin-icon.png"
+        /></a>
+        <a
+          class="social-nav__icon"
+          href="https://github.com/galoelmer"
+          target="_blank"
+          ><img src="./public/img/github-icon.png"
+        /></a>
+      </section>
+    </main>
+
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>
