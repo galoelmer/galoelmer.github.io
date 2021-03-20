@@ -571,17 +571,64 @@
 }
 
 .portfolio-page__projects-card {
+  position: relative;
   border-radius: 0.25em;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  background-color: #1E2A3A;
+  background-color: #1e2a3a;
   margin-bottom: 1.5em;
 }
 
 .portfolio-page__projects-card-image {
   width: 100%;
   height: 50%;
+}
+
+.portfolio-page__projects-card-overlay {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1e2a3a;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-page__projects-card-overlay ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.portfolio-page__projects-card-overlay ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #405a7c;
+  border-radius: 0.35em;
+  width: 80%;
+  height: 3.5em;
+  margin-bottom: 2em;
+}
+
+.portfolio-page__projects-card-overlay ul a:hover {
+  background-color: #354a64;
+}
+
+.portfolio-page__projects-card-overlay ul a li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.portfolio-page__projects-card-overlay ul a li svg {
+  margin-right: 0.65em;
 }
 
 .portfolio-page__projects-card-info {
@@ -611,6 +658,10 @@
 
 .portfolio-page__projects-card-info .card-info-icons svg {
   margin-right: 0.65em;
+}
+
+.portfolio-page__projects-card:hover .portfolio-page__projects-card-overlay {
+  opacity: 1;
 }
 
 .resume-page {
