@@ -104,7 +104,7 @@
 
 .resume-page__objective {
   display: flex;
-  // align-items: center;
+  flex-wrap: wrap;
   font-size: 0.9em;
   padding: 1.5em 0;
   line-height: 1.5;

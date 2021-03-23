@@ -1,5 +1,27 @@
 .about-page {
   padding: 1.5em;
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  
+  &__top-section {
+    @include responsive(desktop) {
+      flex: 1;
+      margin-right: 2.5em;
+    }
+  }
+
+  @include responsive(tablet) {
+    max-width: 768px;
+  }
+  
+  @include responsive(desktop) {
+    display: flex;
+    padding: 2em 4.5em;
+    flex: 1;
+    max-width: none;
+  }
+
 }
 
 .about-page__introduction {
@@ -27,6 +49,10 @@
       color: #119da4;
     }
   }
+
+  @include responsive(desktop) {
+    flex: 1;
+  }
 }
 
 .about-page__links {
@@ -35,6 +61,7 @@
   & > * {
     display: block;
     padding: 0.55em 1.2em;
+    height: 2.5em;
     color: #fff;
     font-weight: bold;
     border-radius: 0.25em;
@@ -69,12 +96,33 @@
       background-color: #31455e;
     }
   }
+
+  @include responsive(desktop) {
+    flex-wrap: wrap;
+
+    &-portfolio {
+      margin-bottom: 1em;
+    }
+  }
 }
 
 .about-page__profile-picture {
   margin-top: 2.5em;
   & img {
     width: 100%;
-    border-radius: 0.2em;
+    border-radius: 0.1em;
+
+    @include responsive(tablet) {
+      width: 20em;
+    }
+
+    @include responsive(desktop) {
+      display: block;
+      width: 16em;
+    }
+  }
+
+  @include responsive(desktop) {
+    margin: 0;
   }
 }

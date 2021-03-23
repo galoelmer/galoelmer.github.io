@@ -10,12 +10,12 @@ $secondary: #1E2A3A;
 // Responsive configuration
 @mixin responsive($breakpoint) {
   @if ($breakpoint == tablet) {
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       @content;
     }
   }
-  @if ($breakpoint == mobile) {
-    @media (max-width: 426px) {
+  @if ($breakpoint == desktop) {
+    @media (min-width: 992px) {
       @content;
     }
   }

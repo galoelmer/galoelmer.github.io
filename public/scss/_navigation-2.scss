@@ -12,6 +12,19 @@
     visibility: hidden;
     height: 0;
     transition: height 0.5s ease;
+
+    @include responsive(desktop) {
+      visibility: visible;
+      padding: 1.2em;
+      height: 100vh;
+    }
+  }
+  
+  @include responsive(desktop) {
+    flex: 1;
+    min-width: 0;
+    max-width: 280px;
+    height: 100vh;
   }
 }
 
@@ -20,10 +33,18 @@
   display: flex;
   align-items: center;
   padding: 1.2em;
+
+  @include responsive(desktop) {
+    padding: 1.2em 0 0;
+  }
 }
 
 .navigation__burger-menu-icon {
   position: relative;
+
+  @include responsive(desktop) {
+    display: none;
+  }
 
   @for $i from 1 through 3 {
     .burger-menu-icon-bar#{$i} {
@@ -47,6 +68,10 @@
   z-index: 9999;
   opacity: 0;
   cursor: pointer;
+
+  @include responsive(desktop) {
+    display: none;
+  }
 
   /*===  Apply transition-toggle to burger icon ===*/
   &:checked + header .burger-menu-icon-bar1 {
@@ -80,6 +105,10 @@
   margin-right: 1em;
   & > a {
     color: #fff;
+  }
+
+  @include responsive(desktop) {
+    margin-right: 0;
   }
 }
 
@@ -175,5 +204,12 @@
 
   &:active {
     background-color: #10676b;
+  }
+
+  @include responsive(desktop) {
+    font-size: 1.1em;
+    width: 8em;
+    height: 45px;
+    margin: 0 auto;
   }
 }

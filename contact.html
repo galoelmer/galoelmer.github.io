@@ -347,6 +347,9 @@
         })
           .then((response) => {
             form.reset();
+            button.disabled = false;
+            innerButton.classList.remove('loader');
+            innerButton.innerText = "Send Now";
             window.location.href = response.url;
           })
           .catch((error) => console.log(error));

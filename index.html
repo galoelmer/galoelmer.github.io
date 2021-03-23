@@ -15,250 +15,254 @@
     <link rel="stylesheet" href="./public/css/main.css" />
   </head>
   <body>
-    <!--=====================================
-      =             Navigation                =
-      ======================================-->
-    <nav class="navigation">
-      <input id="burger-menu-checkbox" type="checkbox" />
-      <header class="navigation__header">
-        <div class="navigation__burger-menu-icon">
-          <div class="burger-menu-icon-bar1"></div>
-          <div class="burger-menu-icon-bar2"></div>
-          <div class="burger-menu-icon-bar3"></div>
-        </div>
-        <h1 class="navigation__full-name"><a href="./index.html">Elmer Galo</a></h1>
-      </header>
-      <section class="navigation__view">
-        <div class="navigation__intro-message">
-          <img
-            class="navigation__profile-picture"
-            src="./public/img/profile-picture.jpg"
-            alt="Profile picture"
-          />
-          <p>
-            Hi, my name is Elmer C. Galo I'm a Front End Developer. Welcome to
-            my personal portfolio website!
-          </p>
-          <div class="navigation__social-links">
-            <a href="https://github.com/galoelmer" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                viewBox="0 0 36 36"
-              >
-                <defs>
-                  <style>
-                    .a {
-                      fill: #119da4;
-                    }
-                    .b {
-                      fill: #fff;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(-140 -351)">
-                  <path
-                    class="a"
-                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
-                    transform="translate(140 351)"
-                  />
-                  <path
-                    class="b"
-                    d="M8.085,16c0,.908-.474,2.394-1.594,2.394S4.9,16.908,4.9,16s.474-2.394,1.594-2.394S8.085,15.092,8.085,16Zm12.769-2.194a9.416,9.416,0,0,1-.76,4.127c-1.647,3.328-6.174,3.25-9.415,3.25-3.293,0-8.09.117-9.8-3.25A9.3,9.3,0,0,1,0,13.806,7.471,7.471,0,0,1,1.8,8.871a6.8,6.8,0,0,1-.335-2.12A4.326,4.326,0,0,1,2.1,4.5,6.788,6.788,0,0,1,6.83,6.064a16.641,16.641,0,0,1,3.854-.434,14.987,14.987,0,0,1,3.493.4A6.714,6.714,0,0,1,18.86,4.5a4.286,4.286,0,0,1,.634,2.25,6.705,6.705,0,0,1-.335,2.094A7.486,7.486,0,0,1,20.854,13.806ZM18.06,16c0-1.907-1.16-3.589-3.193-3.589a17.863,17.863,0,0,0-2.433.261,12.765,12.765,0,0,1-1.959.139,12.844,12.844,0,0,1-1.959-.139,17.573,17.573,0,0,0-2.433-.261c-2.033,0-3.193,1.681-3.193,3.589,0,3.815,3.493,4.4,6.534,4.4h2.094c3.054,0,6.543-.582,6.543-4.4Zm-3.589-2.394c-1.121,0-1.594,1.486-1.594,2.394s.474,2.394,1.594,2.394S16.066,16.908,16.066,16,15.593,13.606,14.472,13.606Z"
-                    transform="translate(148 356.158)"
-                  />
-                </g>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/galoelmer/" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                viewBox="0 0 36 36"
-              >
-                <defs>
-                  <style>
-                    .a {
-                      fill: #119da4;
-                    }
-                    .b {
-                      fill: #fff;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(-196 -351)">
-                  <path
-                    class="a"
-                    d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
-                    transform="translate(196 351)"
-                  />
-                  <path
-                    class="b"
-                    d="M4.667,20.85H.344V6.93H4.667ZM2.5,5.031A2.515,2.515,0,1,1,5.007,2.5,2.525,2.525,0,0,1,2.5,5.031ZM20.845,20.85H16.532V14.074c0-1.615-.033-3.686-2.247-3.686-2.247,0-2.592,1.755-2.592,3.57V20.85H7.375V6.93h4.146v1.9h.061a4.542,4.542,0,0,1,4.09-2.248c4.375,0,5.179,2.881,5.179,6.623V20.85Z"
-                    transform="translate(204.5 356.492)"
-                  />
-                </g>
-              </svg>
-            </a>
+    <div class="container">
+      <!--=====================================
+        =             Navigation                =
+        ======================================-->
+      <nav class="navigation">
+        <input id="burger-menu-checkbox" type="checkbox" />
+        <header class="navigation__header">
+          <div class="navigation__burger-menu-icon">
+            <div class="burger-menu-icon-bar1"></div>
+            <div class="burger-menu-icon-bar2"></div>
+            <div class="burger-menu-icon-bar3"></div>
           </div>
-        </div>
-        <hr class="navigation__break-line" />
-        <ul class="navigation__links">
-          <li class="navigation__link active-link">
-            <a href="./index.html"
-              ><span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.01"
-                  height="20.01"
-                  viewBox="0 0 20.01 20.01"
-                >
-                  <path
-                    data-name="About Me Link"
-                    d="M10,11.256A5.628,5.628,0,1,0,4.377,5.628,5.629,5.629,0,0,0,10,11.256Zm5,1.251H12.854a6.8,6.8,0,0,1-5.7,0H5a5,5,0,0,0-5,5v.625A1.876,1.876,0,0,0,1.876,20.01H18.134a1.876,1.876,0,0,0,1.876-1.876v-.625A5,5,0,0,0,15.007,12.506Z"
-                    fill="#bcc0c4"
-                  />
-                </svg>
-                About Me</span
-              ></a
-            >
-          </li>
-          <li class="navigation__link">
-            <a href="./portfolio.html"
-              ><span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22.01"
-                  height="17.608"
-                  viewBox="0 0 22.01 17.608"
-                >
-                  <path
-                    data-name="Portfolio Link"
-                    d="M8.771,9a.55.55,0,0,0,.778,0l.389-.389a.55.55,0,0,0,0-.778L8.709,6.6,9.938,5.375a.55.55,0,0,0,0-.778l-.389-.389a.55.55,0,0,0-.778,0L6.764,6.214a.55.55,0,0,0,0,.778L8.771,9Zm3.3-.389L12.461,9a.55.55,0,0,0,.778,0l2.006-2.006a.55.55,0,0,0,0-.778L13.24,4.208a.55.55,0,0,0-.778,0l-.389.389a.55.55,0,0,0,0,.778L13.3,6.6,12.072,7.831a.55.55,0,0,0,0,.778Zm9.387,5.7H13.121A1.084,1.084,0,0,1,12,15.407H9.9a1.168,1.168,0,0,1-1.127-1.1H.55a.552.552,0,0,0-.55.55v.55a2.207,2.207,0,0,0,2.2,2.2H19.809a2.207,2.207,0,0,0,2.2-2.2v-.55A.552.552,0,0,0,21.46,14.306ZM19.809,1.651A1.656,1.656,0,0,0,18.158,0H3.852A1.656,1.656,0,0,0,2.2,1.651V13.206H19.809ZM17.608,11H4.4V2.2H17.608Z"
-                    fill="#bcc0c4"
-                  />
-                </svg>
-                Portfolio</span
-              ></a
-            >
-          </li>
-          <li class="navigation__link">
-            <a href="./resume.html"
-              ><span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19.25"
-                  height="19.25"
-                  viewBox="0 0 19.25 19.25"
-                >
-                  <path
-                    data-name="Resume Link"
-                    d="M6.892,4.856v14.9a.65.65,0,0,1-.648.648h0a.65.65,0,0,1-.648-.648V6.337h-.74A1.479,1.479,0,0,0,3.375,7.817V21.144a1.479,1.479,0,0,0,1.481,1.481H21.2a1.431,1.431,0,0,0,1.43-1.43V4.856a1.479,1.479,0,0,0-1.481-1.481L8.28,3.468A1.326,1.326,0,0,0,6.892,4.856ZM9.946,6.337h3.887a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946A.65.65,0,0,1,9.3,6.984h0A.65.65,0,0,1,9.946,6.337Zm0,7.4h6.849a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946a.65.65,0,0,1-.648-.648h0A.65.65,0,0,1,9.946,13.74Zm9.07,5H9.946A.65.65,0,0,1,9.3,18.09h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,18.738Zm0-7.4H9.946a.65.65,0,0,1-.648-.648h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,11.334Z"
-                    transform="translate(-3.375 -3.375)"
-                    fill="#bcc0c4"
-                  />
-                </svg>
-                Resume</span
-              ></a
-            >
-          </li>
-          <li class="navigation__link">
-            <a href="./contact.html"
-              ><span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.99"
-                  height="22.489"
-                  viewBox="0 0 20.99 22.489"
-                >
-                  <path
-                    data-name="Contact Link"
-                    d="M17.992,10.924H10.5v1.5h7.5Zm-4.5-3h-3v1.5h3Zm9-.643V4.927h-3.3l-4.2-3-4.2,3H7.5V7.282l-3,2.143V24.417h20.99V9.424l-3-2.143ZM9,6.426H20.991v5.735l-6,4.947L9,12.161V6.426Zm-3,6,5.9,4.489L6,21.419v-9ZM7.5,22.918l5.95-4.832,1.546,1.177,1.543-1.174,5.953,4.829H7.5Zm16.492-1.5-5.912-4.5,5.912-4.5v9Z"
-                    transform="translate(-4.499 -1.928)"
-                    fill="#bcc0c4"
-                  />
-                </svg>
-                Contact</span
-              ></a
-            >
-          </li>
-        </ul>
-        <a href="./contact.html" class="navigation__hire-me-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="20"
-            viewBox="0 0 30.971 22.445"
-          >
-            <path
-              data-name="Hire me Link"
-              d="M6.717,4.055l4.165,4.507L7.943,14.354l6.2-1.112,2.825,6.815,12-15.734Zm-.768,9.763,1.155-.95-1.49.471-.152-.217.616-.6-.808.326a8.222,8.222,0,0,0-2.7,13.65,8.164,8.164,0,0,1-1.068-4.05A8.428,8.428,0,0,1,6.715,14.7l.38-.925-.905.4-.255-.344.013-.013Zm5.268-2.378,1.929-3.405L24.49,5.378Z"
-              transform="translate(0 -4.055)"
-              fill="#fff"
+          <h1 class="navigation__full-name">
+            <a href="./index.html">Elmer Galo</a>
+          </h1>
+        </header>
+        <section class="navigation__view">
+          <div class="navigation__intro-message">
+            <img
+              class="navigation__profile-picture"
+              src="./public/img/profile-picture.jpg"
+              alt="Profile picture"
             />
-          </svg>
-          Hire Me
-        </a>
-      </section>
-    </nav>
-    <!--=====================================
-    =             About Page                =
-    ======================================-->
-    <main>
-      <section class="about-page">
-        <article class="about-page__introduction">
-          <h1>Elmer Galo</h1>
-          <h3>Front-End Developer</h3>
-          <p>
-            My name is Elmer C. Galo, I’m a Front-End Developer from Greensboro,
-            North Carolina! I've spent the last 2 years training Front/Back-End
-            development where I specialize in creating full-fledged interactive
-            web applications. Want to find out more about my experience? Check
-            out my project
-            <a href="#">portfolio</a> and online <a href="#">resume</a>.
-          </p>
-        </article>
-        <div class="about-page__links">
-          <a class="about-page__links-portfolio" href="./portfolio.html"
-            ><svg
+            <p>
+              Hi, my name is Elmer C. Galo I'm a Front End Developer. Welcome to
+              my personal portfolio website!
+            </p>
+            <div class="navigation__social-links">
+              <a href="https://github.com/galoelmer" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 36 36"
+                >
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #119da4;
+                      }
+                      .b {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-140 -351)">
+                    <path
+                      class="a"
+                      d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                      transform="translate(140 351)"
+                    />
+                    <path
+                      class="b"
+                      d="M8.085,16c0,.908-.474,2.394-1.594,2.394S4.9,16.908,4.9,16s.474-2.394,1.594-2.394S8.085,15.092,8.085,16Zm12.769-2.194a9.416,9.416,0,0,1-.76,4.127c-1.647,3.328-6.174,3.25-9.415,3.25-3.293,0-8.09.117-9.8-3.25A9.3,9.3,0,0,1,0,13.806,7.471,7.471,0,0,1,1.8,8.871a6.8,6.8,0,0,1-.335-2.12A4.326,4.326,0,0,1,2.1,4.5,6.788,6.788,0,0,1,6.83,6.064a16.641,16.641,0,0,1,3.854-.434,14.987,14.987,0,0,1,3.493.4A6.714,6.714,0,0,1,18.86,4.5a4.286,4.286,0,0,1,.634,2.25,6.705,6.705,0,0,1-.335,2.094A7.486,7.486,0,0,1,20.854,13.806ZM18.06,16c0-1.907-1.16-3.589-3.193-3.589a17.863,17.863,0,0,0-2.433.261,12.765,12.765,0,0,1-1.959.139,12.844,12.844,0,0,1-1.959-.139,17.573,17.573,0,0,0-2.433-.261c-2.033,0-3.193,1.681-3.193,3.589,0,3.815,3.493,4.4,6.534,4.4h2.094c3.054,0,6.543-.582,6.543-4.4Zm-3.589-2.394c-1.121,0-1.594,1.486-1.594,2.394s.474,2.394,1.594,2.394S16.066,16.908,16.066,16,15.593,13.606,14.472,13.606Z"
+                      transform="translate(148 356.158)"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/galoelmer/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 36 36"
+                >
+                  <defs>
+                    <style>
+                      .a {
+                        fill: #119da4;
+                      }
+                      .b {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-196 -351)">
+                    <path
+                      class="a"
+                      d="M18,0A18,18,0,1,1,0,18,18,18,0,0,1,18,0Z"
+                      transform="translate(196 351)"
+                    />
+                    <path
+                      class="b"
+                      d="M4.667,20.85H.344V6.93H4.667ZM2.5,5.031A2.515,2.515,0,1,1,5.007,2.5,2.525,2.525,0,0,1,2.5,5.031ZM20.845,20.85H16.532V14.074c0-1.615-.033-3.686-2.247-3.686-2.247,0-2.592,1.755-2.592,3.57V20.85H7.375V6.93h4.146v1.9h.061a4.542,4.542,0,0,1,4.09-2.248c4.375,0,5.179,2.881,5.179,6.623V20.85Z"
+                      transform="translate(204.5 356.492)"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <hr class="navigation__break-line" />
+          <ul class="navigation__links">
+            <li class="navigation__link active-link">
+              <a href="./index.html"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.01"
+                    height="20.01"
+                    viewBox="0 0 20.01 20.01"
+                  >
+                    <path
+                      data-name="About Me Link"
+                      d="M10,11.256A5.628,5.628,0,1,0,4.377,5.628,5.629,5.629,0,0,0,10,11.256Zm5,1.251H12.854a6.8,6.8,0,0,1-5.7,0H5a5,5,0,0,0-5,5v.625A1.876,1.876,0,0,0,1.876,20.01H18.134a1.876,1.876,0,0,0,1.876-1.876v-.625A5,5,0,0,0,15.007,12.506Z"
+                      fill="#bcc0c4"
+                    />
+                  </svg>
+                  About Me</span
+                ></a
+              >
+            </li>
+            <li class="navigation__link">
+              <a href="./portfolio.html"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22.01"
+                    height="17.608"
+                    viewBox="0 0 22.01 17.608"
+                  >
+                    <path
+                      data-name="Portfolio Link"
+                      d="M8.771,9a.55.55,0,0,0,.778,0l.389-.389a.55.55,0,0,0,0-.778L8.709,6.6,9.938,5.375a.55.55,0,0,0,0-.778l-.389-.389a.55.55,0,0,0-.778,0L6.764,6.214a.55.55,0,0,0,0,.778L8.771,9Zm3.3-.389L12.461,9a.55.55,0,0,0,.778,0l2.006-2.006a.55.55,0,0,0,0-.778L13.24,4.208a.55.55,0,0,0-.778,0l-.389.389a.55.55,0,0,0,0,.778L13.3,6.6,12.072,7.831a.55.55,0,0,0,0,.778Zm9.387,5.7H13.121A1.084,1.084,0,0,1,12,15.407H9.9a1.168,1.168,0,0,1-1.127-1.1H.55a.552.552,0,0,0-.55.55v.55a2.207,2.207,0,0,0,2.2,2.2H19.809a2.207,2.207,0,0,0,2.2-2.2v-.55A.552.552,0,0,0,21.46,14.306ZM19.809,1.651A1.656,1.656,0,0,0,18.158,0H3.852A1.656,1.656,0,0,0,2.2,1.651V13.206H19.809ZM17.608,11H4.4V2.2H17.608Z"
+                      fill="#bcc0c4"
+                    />
+                  </svg>
+                  Portfolio</span
+                ></a
+              >
+            </li>
+            <li class="navigation__link">
+              <a href="./resume.html"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19.25"
+                    height="19.25"
+                    viewBox="0 0 19.25 19.25"
+                  >
+                    <path
+                      data-name="Resume Link"
+                      d="M6.892,4.856v14.9a.65.65,0,0,1-.648.648h0a.65.65,0,0,1-.648-.648V6.337h-.74A1.479,1.479,0,0,0,3.375,7.817V21.144a1.479,1.479,0,0,0,1.481,1.481H21.2a1.431,1.431,0,0,0,1.43-1.43V4.856a1.479,1.479,0,0,0-1.481-1.481L8.28,3.468A1.326,1.326,0,0,0,6.892,4.856ZM9.946,6.337h3.887a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946A.65.65,0,0,1,9.3,6.984h0A.65.65,0,0,1,9.946,6.337Zm0,7.4h6.849a.65.65,0,0,1,.648.648h0a.65.65,0,0,1-.648.648H9.946a.65.65,0,0,1-.648-.648h0A.65.65,0,0,1,9.946,13.74Zm9.07,5H9.946A.65.65,0,0,1,9.3,18.09h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,18.738Zm0-7.4H9.946a.65.65,0,0,1-.648-.648h0a.65.65,0,0,1,.648-.648h9.07a.65.65,0,0,1,.648.648h0A.65.65,0,0,1,19.016,11.334Z"
+                      transform="translate(-3.375 -3.375)"
+                      fill="#bcc0c4"
+                    />
+                  </svg>
+                  Resume</span
+                ></a
+              >
+            </li>
+            <li class="navigation__link">
+              <a href="./contact.html"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.99"
+                    height="22.489"
+                    viewBox="0 0 20.99 22.489"
+                  >
+                    <path
+                      data-name="Contact Link"
+                      d="M17.992,10.924H10.5v1.5h7.5Zm-4.5-3h-3v1.5h3Zm9-.643V4.927h-3.3l-4.2-3-4.2,3H7.5V7.282l-3,2.143V24.417h20.99V9.424l-3-2.143ZM9,6.426H20.991v5.735l-6,4.947L9,12.161V6.426Zm-3,6,5.9,4.489L6,21.419v-9ZM7.5,22.918l5.95-4.832,1.546,1.177,1.543-1.174,5.953,4.829H7.5Zm16.492-1.5-5.912-4.5,5.912-4.5v9Z"
+                      transform="translate(-4.499 -1.928)"
+                      fill="#bcc0c4"
+                    />
+                  </svg>
+                  Contact</span
+                ></a
+              >
+            </li>
+          </ul>
+          <a href="./contact.html" class="navigation__hire-me-button">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="19.828"
-              height="19.084"
-              viewBox="0 0 19.828 19.084"
+              width="26"
+              height="20"
+              viewBox="0 0 30.971 22.445"
             >
               <path
-                data-name="Icon awesome-arrow-alt-circle-right"
-                d="M10.477.563A9.732,9.732,0,0,1,20.391,10.1a9.732,9.732,0,0,1-9.914,9.542A9.732,9.732,0,0,1,.563,10.1,9.732,9.732,0,0,1,10.477.563ZM5.839,11.8h4.637v2.728a.483.483,0,0,0,.82.327l4.569-4.421a.446.446,0,0,0,0-.65L11.3,5.357a.482.482,0,0,0-.82.327V8.412H5.839a.472.472,0,0,0-.48.462v2.462A.472.472,0,0,0,5.839,11.8Z"
-                transform="translate(-0.563 -0.563)"
+                data-name="Hire me Link"
+                d="M6.717,4.055l4.165,4.507L7.943,14.354l6.2-1.112,2.825,6.815,12-15.734Zm-.768,9.763,1.155-.95-1.49.471-.152-.217.616-.6-.808.326a8.222,8.222,0,0,0-2.7,13.65,8.164,8.164,0,0,1-1.068-4.05A8.428,8.428,0,0,1,6.715,14.7l.38-.925-.905.4-.255-.344.013-.013Zm5.268-2.378,1.929-3.405L24.49,5.378Z"
+                transform="translate(0 -4.055)"
                 fill="#fff"
               />
             </svg>
-            Portfolio</a
-          >
-          <a class="about-page__links-resume" href="./resume.html"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="19.149"
-              height="19.149"
-              viewBox="0 0 19.149 19.149"
+            Hire Me
+          </a>
+        </section>
+      </nav>
+      <!--=====================================
+      =             About Page                =
+      ======================================-->
+      <section class="about-page">
+        <div class="about-page__top-section">
+          <section class="about-page__introduction">
+            <h1>Elmer Galo</h1>
+            <h3>Front-End Developer</h3>
+            <p>
+              My name is Elmer C. Galo, I’m a Front-End Developer from Greensboro,
+              North Carolina! I've spent the last 2 years training Front/Back-End
+              development where I specialize in creating full-fledged interactive
+              web applications. Want to find out more about my experience? Check
+              out my project
+              <a href="#">portfolio</a> and online <a href="#">resume</a>.
+            </p>
+          </section>
+          <section class="about-page__links">
+            <a class="about-page__links-portfolio" href="./portfolio.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19.828"
+                height="19.084"
+                viewBox="0 0 19.828 19.084"
+              >
+                <path
+                  data-name="Icon awesome-arrow-alt-circle-right"
+                  d="M10.477.563A9.732,9.732,0,0,1,20.391,10.1a9.732,9.732,0,0,1-9.914,9.542A9.732,9.732,0,0,1,.563,10.1,9.732,9.732,0,0,1,10.477.563ZM5.839,11.8h4.637v2.728a.483.483,0,0,0,.82.327l4.569-4.421a.446.446,0,0,0,0-.65L11.3,5.357a.482.482,0,0,0-.82.327V8.412H5.839a.472.472,0,0,0-.48.462v2.462A.472.472,0,0,0,5.839,11.8Z"
+                  transform="translate(-0.563 -0.563)"
+                  fill="#fff"
+                />
+              </svg>
+              Portfolio</a
             >
-              <path
-                id="Icon_ionic-ios-paper"
-                data-name="Icon ionic-ios-paper"
-                d="M6.873,4.848V19.67a.646.646,0,0,1-.644.644h0a.646.646,0,0,1-.644-.644V6.321H4.848A1.471,1.471,0,0,0,3.375,7.794V21.051a1.471,1.471,0,0,0,1.473,1.473H21.1A1.423,1.423,0,0,0,22.524,21.1V4.848a1.471,1.471,0,0,0-1.473-1.473l-12.8.092A1.319,1.319,0,0,0,6.873,4.848ZM9.911,6.321h3.867a.646.646,0,0,1,.644.644h0a.646.646,0,0,1-.644.644H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,6.321Zm0,7.365h6.813a.646.646,0,0,1,.644.644h0a.646.646,0,0,1-.644.644H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,13.686Zm9.022,4.971H9.911a.646.646,0,0,1-.644-.644h0a.646.646,0,0,1,.644-.644h9.022a.646.646,0,0,1,.644.644h0A.646.646,0,0,1,18.933,18.657Zm0-7.365H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,10h9.022a.646.646,0,0,1,.644.644h0A.646.646,0,0,1,18.933,11.292Z"
-                transform="translate(-3.375 -3.375)"
-                fill="#fff9f9"
-              />
-            </svg>
-            Resume</a
-          >
+            <a class="about-page__links-resume" href="./resume.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19.149"
+                height="19.149"
+                viewBox="0 0 19.149 19.149"
+              >
+                <path
+                  id="Icon_ionic-ios-paper"
+                  data-name="Icon ionic-ios-paper"
+                  d="M6.873,4.848V19.67a.646.646,0,0,1-.644.644h0a.646.646,0,0,1-.644-.644V6.321H4.848A1.471,1.471,0,0,0,3.375,7.794V21.051a1.471,1.471,0,0,0,1.473,1.473H21.1A1.423,1.423,0,0,0,22.524,21.1V4.848a1.471,1.471,0,0,0-1.473-1.473l-12.8.092A1.319,1.319,0,0,0,6.873,4.848ZM9.911,6.321h3.867a.646.646,0,0,1,.644.644h0a.646.646,0,0,1-.644.644H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,6.321Zm0,7.365h6.813a.646.646,0,0,1,.644.644h0a.646.646,0,0,1-.644.644H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,13.686Zm9.022,4.971H9.911a.646.646,0,0,1-.644-.644h0a.646.646,0,0,1,.644-.644h9.022a.646.646,0,0,1,.644.644h0A.646.646,0,0,1,18.933,18.657Zm0-7.365H9.911a.646.646,0,0,1-.644-.644h0A.646.646,0,0,1,9.911,10h9.022a.646.646,0,0,1,.644.644h0A.646.646,0,0,1,18.933,11.292Z"
+                  transform="translate(-3.375 -3.375)"
+                  fill="#fff9f9"
+                />
+              </svg>
+              Resume</a
+            >
+          </section>
         </div>
-        <div class="about-page__profile-picture">
+        <section class="about-page__profile-picture">
           <img src="https://picsum.photos/id/669/300?grayscale" alt="random" />
-        </div>
+        </section>
       </section>
-    </main>
+    </div>
   </body>
 </html>
