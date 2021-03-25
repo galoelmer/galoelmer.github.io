@@ -19,12 +19,25 @@
       height: 100vh;
     }
   }
-  
+
+  &::-webkit-scrollbar {
+    background: $secondary;
+    width: 0.3em;
+
+    &-thumb {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 0.2em;
+    }
+  }
+
   @include responsive(desktop) {
-    flex: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
     min-width: 0;
-    max-width: 280px;
     height: 100vh;
+    overflow-y: auto;
   }
 }
 

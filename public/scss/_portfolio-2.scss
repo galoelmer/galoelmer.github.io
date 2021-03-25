@@ -43,6 +43,10 @@
       background-color: #10676b;
     }
   }
+
+  @include responsive(desktop) {
+    margin-left: 280px;
+  }
 }
 
 .portfolio-page__break-line {
@@ -53,8 +57,10 @@
 
 .portfolio-page__projects {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0 0.85em;
+  max-width: 540px;
+  margin: 0 auto;
 
   &-card {
     position: relative;
@@ -147,6 +153,39 @@
 
     &:hover &-overlay {
       opacity: 1;
+    }
+
+    @include responsive(tablet) {
+      margin: 1em;
+      width: 45%;
+    }
+  }
+
+  @include responsive(tablet) {
+    max-width: 720px;
+  }
+  
+  @include responsive(desktop) {
+    padding: 0;
+    max-width: 1140px;
+
+    & .card-info-icons {
+      margin-bottom: 1em;
+    }
+  }
+
+  @include responsive(desktopLarge) {
+    &-card {
+      flex-wrap: nowrap;
+
+      &-image {
+        width: 35%;
+        height: 100%;
+      }
+    }
+
+    & .card-info-icons {
+      margin-bottom: 0;
     }
   }
 }
