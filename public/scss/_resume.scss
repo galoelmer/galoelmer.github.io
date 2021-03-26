@@ -196,10 +196,21 @@
     &__personal-info {
       &-job-title {
         margin-top: -1em;
+        & h1 {
+          color: #000000bb;
+        }
       }
 
       &-contact {
+        color: #000000bb;
         margin-left: 5em;
+        & a {
+          color: #000000bb;
+        }
+
+        & svg path {
+          fill: #000000bb;
+        }
       }
     }
 
@@ -210,6 +221,14 @@
 
       & > p {
         width: 75%;
+      }
+    }
+
+    &__work-experience h3 {
+      padding-left: 0;
+
+      &::before {
+        content: none;
       }
     }
   }

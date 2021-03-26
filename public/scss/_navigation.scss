@@ -1,137 +1,234 @@
-.nav {
+.navigation {
   display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #{$secondary};
+  color: #fff;
   width: 100%;
-  justify-content: space-between;
-  margin: 1em;
-  font-size: 1.05em;
+  min-width: 320px;
 
-  @include responsive(tablet) {
-    margin: 0.8em;
-    font-size: 1em;
+  &__view {
+    padding: 0 1.2em;
+    visibility: hidden;
+    height: 0;
+    transition: height 0.5s ease;
+
+    @include responsive(desktop) {
+      visibility: visible;
+      padding: 1.2em;
+      height: 100vh;
+    }
   }
 
-  @include responsive(mobile) {
+  &::-webkit-scrollbar {
+    background: $secondary;
+    width: 0.3em;
+
+    &-thumb {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 0.2em;
+    }
+  }
+
+  @include responsive(desktop) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    min-width: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.navigation__header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 1.2em;
+
+  @include responsive(desktop) {
+    padding: 1.2em 0 0;
+  }
+}
+
+.navigation__burger-menu-icon {
+  position: relative;
+
+  @include responsive(desktop) {
+    display: none;
+  }
+
+  @for $i from 1 through 3 {
+    .burger-menu-icon-bar#{$i} {
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+      margin: 6px 0;
+      transition: 0.4s;
+      border-radius: 1px;
+    }
+  }
+}
+
+// Hidden input tag of type check
+#burger-menu-checkbox {
+  position: absolute;
+  top: 1.5em;
+  left: 1.2em;
+  width: 35px;
+  height: 35px;
+  z-index: 9999;
+  opacity: 0;
+  cursor: pointer;
+
+  @include responsive(desktop) {
+    display: none;
+  }
+
+  /*===  Apply transition-toggle to burger icon ===*/
+  &:checked + header .burger-menu-icon-bar1 {
+    transform: rotate(-45deg) translate(-9px, 7px);
+  }
+
+  &:checked + header .burger-menu-icon-bar2 {
+    opacity: 0;
+  }
+
+  &:checked + header .burger-menu-icon-bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+  &:checked ~ .navigation__view {
+    visibility: visible;
+    height: 100vh;
+
+    @media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+      & {
+        height: 100%;
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
+
+.navigation__full-name {
+  flex: 1;
+  text-align: center;
+  margin-right: 1em;
+  & > a {
+    color: #fff;
+  }
+
+  @include responsive(desktop) {
+    margin-right: 0;
+  }
+}
+
+.navigation__intro-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & p {
     font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 0.6em;
   }
+}
 
-  .nav-menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 35%;
-    margin-right: 10em;
+.navigation__profile-picture {
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  margin-bottom: 1.2em;
+}
 
-    @include responsive(tablet) {
-      width: 50%;
-      margin-right: 2em;
-    }
+.navigation__social-links svg {
+  margin: 1.5em 0.8em;
 
-    @include responsive(mobile) {
-      width: 75%;
-      margin-right: 0;
-    }
+  &:hover .a {
+    fill: #0e777c;
+  }
+}
 
-    &__link {
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.8em;
+.navigation__break-line {
+  border-color: #fffbfb1c;
+  background-color: #fffbfb1c;
+}
+
+.navigation__links {
+  margin: 1.5em;
+
+  & li {
+    margin-bottom: 1em;
+    & span {
+      color: #bcc0c4;
+      font-size: 1.2em;
       font-weight: bold;
-      position: relative;
 
-      & span img {
-        margin: 0 3px -3px 0;
-        width: 22px;
-
-        @include responsive(tablet) {
-          width: 18px;
-        }
-
-        @include responsive(mobile) {
-          width: 15px;
-        }
+      & svg {
+        margin-right: 0.3em;
       }
+    }
 
-      &::after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: -5px;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: tomato;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
-      }
+    &:hover svg path {
+      fill: #119da4;
+    }
 
-      &:hover:after {
-        width: 100%;
-        left: 0;
-      }
-
-      &:hover {
-        color: #568dc9;
-      }
+    &:hover span {
+      color: #119da4;
     }
   }
+}
 
-  .logo {
-    margin-left: 8em;
-    cursor: pointer;
-
-    @include responsive(tablet) {
-      margin-left: 1em;
-    }
-
-    @include responsive(mobile) {
-      margin-left: 0;
-    }
-
-    &__img {
-      display: block;
-      width: 125px;
-
-      @include responsive(tablet) {
-        display: block;
-        width: 105px;
-      }
-
-      @include responsive(mobile) {
-        display: block;
-        width: 75px;
-      }
-
-      &:hover {
-        filter: hue-rotate(200deg);
-      }
-    }
+.active-link {
+  & svg path {
+    fill: #119da4;
   }
 
-  .scroll-to-top-button {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: tomato; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 15px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0.6;
+  & > a > span {
+    color: #119da4;
+  }
+}
 
-    @include responsive(mobile) {
-      bottom: 75px;
-      right: 15px;
-      padding: 12px;
-    }
+.navigation__hire-me-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  background-color: #119da4;
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 14px rgba(0, 0, 0, 0.3);
 
-    &:hover {
-      background-color: #e42300; /* Add a dark-grey background on hover */
-    }
+  & svg {
+    margin-right: 0.3em;
+  }
+
+  &:hover {
+    background-color: #0e777c;
+  }
+
+  &:active {
+    background-color: #10676b;
+  }
+
+  @include responsive(desktop) {
+    font-size: 1.1em;
+    width: 8em;
+    height: 45px;
+    margin: 0 auto;
+  }
+}
+
+@media print {
+  .navigation {
+    display: none;
   }
 }
