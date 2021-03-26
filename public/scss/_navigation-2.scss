@@ -226,3 +226,9 @@
     margin: 0 auto;
   }
 }
+
+@media print {
+  .navigation {
+    display: none;
+  }
+}

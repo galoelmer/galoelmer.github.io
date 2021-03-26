@@ -37,6 +37,10 @@
       background-color: #10676b;
     }
   }
+
+  @include responsive(desktop) {
+    margin-left: 280px;
+  }
 }
 
 .resume-page__break-line {
@@ -45,21 +49,23 @@
 }
 
 .resume-page__resume-view {
-  color: #949494;
+  color: #ffffffe1;
   background-color: #151e29;
   border-radius: 0.15em;
   padding: 3em;
   margin-top: 2em;
+  max-width: 540px;
+  margin: 2em auto;
+
+  @include responsive(tablet) {
+    max-width: 720px;
+  }
 }
 
 .resume-page__personal-info {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1em;
-
-  &-job-title {
-    flex: 1;
-  }
 
   & h1 {
     color: #fffffff1;
@@ -82,21 +88,31 @@
     justify-content: center;
 
     & a {
-      color: #949494;
+      display: inline-block;
+      color: #ffffffe1;
     }
 
     & li {
       display: flex;
-      align-items: center;
+      height: 1.3em;
+      line-height: 0.75em;
       font-size: 0.85em;
       margin-bottom: 0.5em;
 
       & svg {
-        margin-right: 0.5em;
+        margin-right: 0.75em;
       }
 
-      & span:hover {
+      & a:hover {
         text-decoration: underline;
+      }
+    }
+  }
+
+  &-job-title {
+    @include responsive(tablet) {
+      & > * {
+        width: 50%;
       }
     }
   }
@@ -104,6 +120,8 @@
 
 .resume-page__objective {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   font-size: 0.9em;
   padding: 1.5em 0;
@@ -112,17 +130,24 @@
   & img {
     display: block;
     border-radius: 50%;
-    width: 6em;
-    height: 6em;
+    width: 6.5em;
+    height: 6.5em;
     margin: 0 auto 1em;
     filter: grayscale(100%);
+  }
+
+  @include responsive(tablet) {
+    flex-wrap: nowrap;
+
+    & img {
+      margin: 0 2.5em 0 1em;
+    }
   }
 }
 
 .resume-page__work-experience {
   padding: 1.5em 0;
-  color: #fffffff1; 
-  
+
   & h3 {
     position: relative;
     text-transform: uppercase;
@@ -147,8 +172,45 @@
   }
 
   & p {
-    color: #949494;
     font-size: 0.85em;
     line-height: 1.5;
+  }
+}
+
+/* Style for print web page */
+@media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+
+  .resume-page {
+    &__heading {
+      display: none;
+    }
+
+    &__resume-view {
+      max-width: 100%;
+    }
+
+    &__personal-info {
+      &-job-title {
+        margin-top: -1em;
+      }
+
+      &-contact {
+        margin-left: 5em;
+      }
+    }
+
+    &__objective {
+      & > img {
+        width: 15%;
+      }
+
+      & > p {
+        width: 75%;
+      }
+    }
   }
 }
