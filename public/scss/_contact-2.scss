@@ -1,6 +1,8 @@
 .contact-page {
   padding: 1.75em;
   min-width: 320px;
+  // max-width: 540px;
+  margin: 0 auto;
 
   &__heading {
     text-align: center;
@@ -30,6 +32,10 @@
         margin: 0 1em;
       }
     }
+  }
+
+  @include responsive(desktop) {
+    margin-left: 280px;
   }
 }
 
@@ -86,11 +92,16 @@
       }
     }
   }
+
+  @include responsive(tablet) {
+    max-width: 540px;
+    margin: 0 auto;
+  }
 }
 
 .loader {
   border: 5px solid #f3f3f3;
-  border-top: 5px solid $primary; 
+  border-top: 5px solid $primary;
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;

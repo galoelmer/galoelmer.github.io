@@ -925,6 +925,7 @@
 .contact-page {
   padding: 1.75em;
   min-width: 320px;
+  margin: 0 auto;
 }
 
 .contact-page__heading {
@@ -955,6 +956,12 @@
 
 .contact-page__heading-social-links li {
   margin: 0 1em;
+}
+
+@media (min-width: 992px) {
+  .contact-page {
+    margin-left: 280px;
+  }
 }
 
 .contact-page__form-container {
@@ -1009,6 +1016,13 @@
 
 .contact-page__form-container form button:active {
   background-color: #0e777c;
+}
+
+@media (min-width: 768px) {
+  .contact-page__form-container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
 }
 
 .loader {
