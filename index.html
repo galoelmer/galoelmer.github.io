@@ -13,6 +13,7 @@
     <title>Elmer's About Page</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/github-calendar.css" />
   </head>
   <body>
     <div class="container">
@@ -298,6 +299,15 @@
           <img src="https://picsum.photos/id/669/300?grayscale" alt="random" />
         </section>
       </section>
+	  <hr />
+      <section class="github-calendar">
+        <h2>Github Contributions Calendar</h2>
+        <div class="calendar"></div>
+      </section>
     </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+      GitHubCalendar(".calendar", "galoelmer", { responsive: true });
+    </script>
   </body>
 </html>
