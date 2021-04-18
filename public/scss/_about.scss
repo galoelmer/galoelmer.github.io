@@ -12,8 +12,11 @@
   }
 
   & + hr {
-    border-color: #fffbfb1c;
+    border: none;
+    height: 2px;
     background-color: #fffbfb1c;
+    width: 90%;
+    margin: 0 auto;
   }
 
   @include responsive(tablet) {
