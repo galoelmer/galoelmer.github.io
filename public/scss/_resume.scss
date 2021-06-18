@@ -41,6 +41,30 @@
   @include responsive(desktop) {
     margin-left: 280px;
   }
+
+  @include responsive(desktop) {
+    &__body {
+      display: grid;
+      grid-template-columns: 1fr 0.37fr;
+      grid-template-rows: 1fr min-content;
+      gap: 0px 15px;
+      grid-template-areas:
+        "work-experience-section skills-education-section"
+        "projects-section skills-education-section";
+    }
+  }
+}
+
+.work-experience-section {
+  grid-area: work-experience-section;
+}
+
+.projects-section {
+  grid-area: projects-section;
+}
+
+.skill-education-section {
+  grid-area: skills-education-section;
 }
 
 .resume-page__break-line {
@@ -55,6 +79,7 @@
 .resume-page__resume-view {
   color: #ffffffe1;
   background-color: #151e29;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.175);
   border-radius: 0.15em;
   padding: 3em;
   margin-top: 2em;
@@ -213,6 +238,14 @@
       margin-bottom: 0.5em;
     }
   }
+
+  & .project-stack-description {
+    list-style: disc;
+
+    & li {
+      margin-left: 1.2em;
+    }
+  }
 }
 
 .resume-page__social-icons {
@@ -231,11 +264,11 @@
 
   & li {
     margin-right: 1.5em;
-    
+
     @include responsive(desktop) {
       & a {
         display: flex;
-        
+
         & svg {
           margin-right: 0.25em;
         }
@@ -247,13 +280,6 @@
         }
       }
     }
-  }
-}
-
-.skill-education-section {
-  @include responsive(desktop) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
