@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -175,8 +176,8 @@
 
 .navigation__profile-picture {
   border-radius: 50%;
-  width: 7em;
-  height: 7em;
+  width: 10em;
+  height: 10em;
   margin-bottom: 1.2em;
 }
 
@@ -980,34 +981,166 @@
   }
   .resume-page__resume-view {
     max-width: 100%;
+    padding: 1.5em 2em;
+  }
+  .resume-page__personal-info {
+    margin-top: -1.5em;
+    margin-bottom: 0.2em;
   }
   .resume-page__personal-info-job-title {
-    margin-top: -1em;
+    margin-top: 2em;
   }
   .resume-page__personal-info-job-title h1 {
+    font-size: 1.8em;
     color: #000000bb;
+  }
+  .resume-page__personal-info-job-title h3 {
+    color: #0000008e;
   }
   .resume-page__personal-info-contact {
     color: #000000bb;
-    margin-left: 5em;
+    margin-left: 15em;
+    margin-top: 1em;
   }
   .resume-page__personal-info-contact a {
     color: #000000bb;
   }
-  .resume-page__personal-info-contact svg path {
-    fill: #000000bb;
+  .resume-page__personal-info-contact li {
+    font-size: 0.8em;
   }
-  .resume-page__objective > img {
+  .resume-page__personal-info-contact svg path {
+    fill: #0000008e;
+  }
+  .resume-page__objective {
+    padding: 0;
+  }
+  .resume-page__objective img {
     width: 15%;
+    margin-top: 0.75em;
   }
   .resume-page__objective > p {
     width: 75%;
+    color: #000000bb;
+    font-size: 0.9em;
+    line-height: 1.9em;
   }
-  .resume-page__work-experience h3 {
-    padding-left: 0;
+  .resume-page__body {
+    display: grid;
+    grid-template-columns: 1fr 0.37fr;
+    grid-template-rows: 1fr min-content;
+    gap: 0px 15px;
+    grid-template-areas: "work-experience-section skills-education-section" "projects-section skills-education-section";
   }
-  .resume-page__work-experience h3::before {
-    content: none;
+  .resume-page__break-line:nth-child(6) {
+    margin: 0.2em 0 0;
+  }
+  .resume-page__social-icons {
+    margin: 0;
+    padding-top: 0.1em;
+  }
+  .resume-page__social-icons svg {
+    width: 14px;
+    vertical-align: middle;
+  }
+  .resume-page__social-icons svg rect {
+    fill: #fff;
+  }
+  .resume-page__social-icons span {
+    font-size: 0.6em;
+    color: #000000a1;
+    display: inline-block;
+  }
+  .work-experience-section {
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+  }
+  .work-experience-section h3 {
+    font-size: 1em;
+    color: #000000bb;
+    margin-bottom: 0.8em;
+  }
+  .work-experience-section h3::before {
+    content: "▌";
+    background-color: #000000bb;
+  }
+  .work-experience-section h4 {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #0000008e;
+  }
+  .work-experience-section h6 {
+    color: #0000008e;
+    float: right;
+  }
+  .work-experience-section p {
+    color: #000000bb;
+    font-size: 0.75em;
+    float: left;
+  }
+  .projects-section {
+    margin-top: -1em;
+  }
+  .projects-section h3 {
+    font-size: 1em;
+    color: #000000bb;
+    margin-bottom: 0.8em;
+  }
+  .projects-section h3::before {
+    content: "▌";
+    background-color: #000000bb;
+  }
+  .projects-section h4 {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #0000008e;
+  }
+  .projects-section a {
+    float: right;
+  }
+  .projects-section a h6 {
+    color: #0000008e;
+  }
+  .projects-section p {
+    color: #000000bb;
+    font-size: 0.75em;
+    float: left;
+  }
+  .projects-section ul {
+    display: inline-block;
+  }
+  .projects-section ul li {
+    font-size: 0.75em;
+    color: #000000bb;
+  }
+  .skill-education-section {
+    padding-left: 0.85em;
+  }
+  .skill-education-section .resume-page__body-section {
+    padding-top: 0.5em;
+  }
+  .skill-education-section h3 {
+    font-size: 1em;
+    color: #000000bb;
+    margin-bottom: 0.8em;
+  }
+  .skill-education-section h3::before {
+    content: "▌";
+    background-color: #000000bb;
+  }
+  .skill-education-section h4 {
+    font-size: 0.9em;
+    color: #0000008e;
+  }
+  .skill-education-section h5 {
+    color: #0000008e;
+    font-size: 0.9em;
+  }
+  .skill-education-section h6 {
+    color: #000000a1;
+  }
+  .skill-education-section li {
+    color: #000000bb;
+    font-size: 0.85em;
   }
 }
 
